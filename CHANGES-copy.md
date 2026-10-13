@@ -68,3 +68,14 @@ Internal file – not linked from the site.
 
 ## Mobile menu (13 Oct, 22:50)
 - Below 992px: hamburger in header (staging orange circle, left on AR, right on EN, replacing the header language pill). Slide-in panel from the same side with language switch, close button, and the same 7 desktop items in order. Closes on backdrop tap, Esc, link tap; aria-expanded/aria-controls, focus moves to close and back. All AR+EN pages.
+
+## Round 13 Oct, 23:00 – test meaning, waves, drops, slogan, shop copy
+- Test copy now says what the test simulates. Source: the campaign video itself (burned-in caption at about 2–4 s of assets/img/test45.mp4, and about 9 s of the staging banner video): «بوضعية الـ45° مثل ما الأم تشيل طفلها» ("at the 45° position, the way a mother holds her baby"). The video also labels BabyJoy «يمنع التسريب» (prevents leakage) and the other diaper «تسريب» (leak).
+  - Hero subline: EN "Leak protection, even while you hold your baby." / AR «حماية من التسريب، حتى وأنتِ تحملين طفلك.»
+  - Hero body: EN "Both diapers are held at 45°, the way a mother holds her baby, with the same amount of liquid. See the difference." / AR «ثبّتنا الحفاضين بزاوية 45°، كما تحمل الأم طفلها، وأضفنا نفس كمية السائل. شاهدي الفرق.»
+  - Test intro: "The only difference is the diaper." / «الفرق الوحيد هو الحفاض.» (the angle and liquid are no longer repeated). Step 1: "Like a baby held in your arms." / «مثل طفلك بين ذراعيك.» Step 3: "See which diaper stops the leak." / «شاهدي أي حفاض يمنع التسريب.»
+  - Video caption shortened to avoid repetition: "BabyJoy (left) vs another diaper (right). Test sample: size 4." (+ AR).
+- Wave system (rule documented in bj-extra.css v41): one wave path with a fixed height (44px mobile, 90px desktop), alternating mirror, as the TOP edge of every homepage band (Shop → Size guide → Premium Olive → Compressed → Size 8 → Wipes → Reviews). Bands butt together, so each wave sits on the flat bottom of the band before it: no white gaps, no bottom curves, no stretched SVG shapes. Band colours are unchanged (same gradient stops as before).
+- 125 ml icon: 22 drops (was 9) with a gentle staggered falling animation; motion is off under prefers-reduced-motion.
+- Mobile (<992px): the "BabyJoy up to the challenge" slogan now sits in the header above the video; the video is unobstructed. Desktop is unchanged (slogan overlays the top of the video, as on staging).
+- Shop band: EN "Shop now / Available at these retailers"; AR «تسوقي الآن / متوفر لدى هذه المتاجر». Retailer tiles are in alphabetical order per language (EN: Al-Dawaa, Amazon.sa, FirstCry, Mumzworld, Nahdi, noon; AR by Arabic name: أمازون، الدواء، النهدي، فيرست كراي، ممزورلد، نون); the FAQ answer and meta description lists use the same order.

@@ -416,3 +416,33 @@ html:not([lang^=ar]) .bjx-mm-p{right:0;transform:translateX(100%)}
 .bjx-mm nav{display:flex;flex-direction:column}
 .bjx-mm nav a{display:flex;align-items:center;min-height:50px;padding:0 6px;border-bottom:1px solid #eceee6;color:var(--p,#172A7B);font-weight:700;font-size:16px;text-decoration:none}
 .bjx-mm nav a:active{background:#f6f7f2}
+/* v41 WAVE SYSTEM — one wave path, fixed height, alternating mirror.
+   Rule: every coloured homepage band (shop → size guide → Premium Olive → Compressed → Size 8 → Wipes → reviews) is a rectangle
+   whose TOP edge is the same wave (--wh tall: 44px mobile / 90px desktop). Bands butt: each band is pulled up by --wh so its wave
+   sits over the flat bottom of the band before. Odd bands use wave A, even bands the mirrored wave B. No bottom curves, no stretched shapes. */
+:root{--wh:90px;--wA:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V52C260 4 520 0 760 30S1220 96 1440 44V100Z'/%3E%3C/svg%3E");--wB:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M1440 100V52C1180 4 920 0 680 30S220 96 0 44V100Z'/%3E%3C/svg%3E")}
+@media(max-width:767px){:root{--wh:44px}}
+#shop,#size-guide,#olive,#compressed,#size8,#wipes,#reviews{position:relative;margin:calc(-1 * var(--wh)) 0 0!important;border-radius:0!important;background-size:auto!important;
+ -webkit-mask:var(--wA) top/100% var(--wh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--wh) - 1px)/100% calc(100% - var(--wh) + 1px) no-repeat;
+ mask:var(--wA) top/100% var(--wh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--wh) - 1px)/100% calc(100% - var(--wh) + 1px) no-repeat}
+#size-guide,#compressed,#wipes{-webkit-mask-image:var(--wB),linear-gradient(#000 0 0);mask-image:var(--wB),linear-gradient(#000 0 0)}
+#shop{margin-top:2rem!important}
+#size-guide::before,#size-guide::after{display:none!important}
+#shop{background:radial-gradient(ellipse at 50% 55%,#F3F3F1,#E4E6DF)!important}
+#size-guide{background:radial-gradient(ellipse at 50% 55%,#7d8c66,var(--p))!important}
+#olive{background:radial-gradient(ellipse at 50% 55%,#97A482,#71805B)!important}
+#compressed{background:radial-gradient(ellipse at 50% 55%,#5cc0a6,#1d7f70)!important}
+#size8{background:radial-gradient(ellipse at 50% 55%,#3f7fe0,#23409f)!important}
+#wipes{background:radial-gradient(ellipse at 50% 55%,#7fd8dd,#1f9fae)!important}
+#reviews{background:#fff!important}
+#shop,#size-guide,#olive,#compressed,#size8,#wipes{padding:calc(var(--wh) + 3.2rem) 0 calc(var(--wh) + 3.2rem)!important}
+#reviews{padding:calc(var(--wh) + 3rem) 0 4rem!important}
+@media(max-width:767px){#shop,#size-guide,#olive,#compressed,#size8,#wipes{padding:calc(var(--wh) + 2.2rem) 0 calc(var(--wh) + 2rem)!important}#reviews{padding:calc(var(--wh) + 2rem) 0 2.4rem!important}}
+#olive .s8-pack,#compressed .s8-pack,#size8 .s8-pack,#wipes .s8-pack{margin-bottom:0!important}
+/* drops animation */
+.bjx-drops .dp{animation:bjdrip var(--t,2s) ease-in var(--d,0s) infinite both}
+@keyframes bjdrip{0%{translate:0 -26px;opacity:0}15%{opacity:1}75%{opacity:1}100%{translate:0 18px;opacity:0}}
+@media(prefers-reduced-motion:reduce){.bjx-drops .dp{animation:none;opacity:1}}
+/* slogan off the video on mobile */
+@media(max-width:991px){.mt-header{position:relative!important}.mt-main_banner{margin-top:0!important}.mt-slogan img{margin-top:4px!important}.mt-slogan{padding-bottom:8px}}
+@media(max-width:991px){.mt-header{height:auto!important;min-height:0!important;padding-bottom:6px}}
