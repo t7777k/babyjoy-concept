@@ -59,3 +59,9 @@ Internal file – not linked from the site.
 - Arabic test caption added for parity: «بيبي جوي (على اليسار) مقابل حفاض آخر (على اليمين)، بنفس الزاوية ونفس كمية السائل. عينة الاختبار: مقاس 4.»
 - Arabic kg ranges checked site-wide: all wrapped in <bdi dir="ltr"> (size guide, product pages, size-button data); glyph positions confirm 6 renders left of 12.
 - Email and company name sourced from the copy doc (section 4, Contact and About rows) – kept.
+
+## Tayyam decisions (13 Oct, 19:36)
+- Menu reverted to the pre-copy-pass items, order and format (AR: الاختبار · دليل المقاسات · بريميوم زيتون · مضغوطة · مقاس 8 · المناديل · دليل الأم; EN: The test · Size guide · Premium Olive · Compressed · Size 8 · Wipes · Parent guide). No feminine fixes were needed on these items.
+- English "Mum's guide" → "Parent guide" everywhere (menu, footer, page title, heading, meta). Arabic stays دليل الأم.
+- About (EN): "mums" reverted to "parents".
+- Softest line: EN "Our softest diaper yet", AR «أنعم حفاض لدينا حتى الآن» (Premium Olive tape, Compressed tape, Compressed pants bands).
