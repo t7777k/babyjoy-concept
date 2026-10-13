@@ -267,3 +267,5 @@
 .bjx-pp .pk{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;box-sizing:border-box}
 .bjx-pp .pk img{width:100%;height:100%;max-height:none;object-fit:contain;object-position:center}
 @media (max-width:767px){.s8-pack{width:min(240px,66%);padding:7%}}
+.shop-band+#size-guide{margin-top:calc(80px + 3rem)}
+@media (max-width:767px){.shop-band+#size-guide{margin-top:calc(40px + 2rem)}}
