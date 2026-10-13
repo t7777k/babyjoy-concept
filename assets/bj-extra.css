@@ -285,3 +285,29 @@
 .shop-band{padding-bottom:clamp(7rem,8vw,10rem)!important}
 .shop-band+#size-guide{margin-top:calc(80px + 6rem)}
 @media (max-width:767px){.shop-band{padding-bottom:5rem!important}.shop-tiles a{padding:.5rem}.shop-tiles img{max-height:44px}.shop-band+#size-guide{margin-top:calc(40px + 4rem)}}
+/* v26 compact size guide */
+#size-guide .bjx-sg{gap:2rem;align-items:center}
+#size-guide .bjx-seg{padding:4px;gap:4px}
+#size-guide .bjx-seg button{padding:7px 8px;font-size:1.35rem}
+#size-guide label.bjx-lbl{margin:1.2rem 0 .6rem;font-size:1.4rem}
+#size-guide .bjx-mode{margin:1.4rem 0 .4rem}
+#size-guide .bjx-wt{margin-top:1.4rem;padding:1.2rem 1.8rem;border-radius:2rem}
+#size-guide .bjx-wt output{font-size:3rem}
+#size-guide .bjx-range{margin:1rem 0 .4rem}
+#size-guide .bjx-note{display:none}
+#size-guide .bjx-res{display:flex!important;flex-direction:row;align-items:center;gap:1.6rem;min-height:0!important;padding:1.4rem;border-radius:2.4rem}
+#size-guide .bjx-res .pk{flex:0 0 150px;width:150px!important;height:150px;min-height:0!important;padding:10px!important;border-radius:1.6rem;display:flex!important;align-items:center;justify-content:center;margin:0}
+#size-guide .bjx-res .pk img{width:100%!important;height:100%!important;object-fit:contain}
+#size-guide .bjx-res .info{padding:0;flex:1;min-width:0}
+#size-guide .bjx-res .sz{font-size:1.2rem;gap:.8rem}
+#size-guide .bjx-res .sz b{width:44px;height:44px;font-size:2.2rem}
+#size-guide .bjx-res h3{margin:.6rem 0 .2rem;font-size:1.7rem}
+#size-guide .bjx-res .kg{margin:0 0 .8rem;font-size:1.4rem}
+#size-guide .bjx-res #sg-a:empty{display:none}
+#size-guide .bjx-res .mt-btn{padding:.7rem 1.8rem;font-size:1.35rem}
+@media (max-width:767px){
+#size-guide{padding-top:calc(40px + 1.6rem)!important;padding-bottom:2.4rem!important}
+#size-guide h2{font-size:2.2rem;margin:.2rem 0 .4rem}#size-guide .bjx-sg p{font-size:1.35rem;margin:0}
+#size-guide .bjx-res{gap:1.2rem;padding:1rem}
+#size-guide .bjx-res .pk{flex-basis:120px;width:120px!important;height:120px}
+#size-guide .bjx-res h3{font-size:1.5rem}}
