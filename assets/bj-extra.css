@@ -224,3 +224,20 @@
 .s8-band .bjx-cta{background:#fff;border-color:#fff;color:#1d2a7a}.s8-band .bjx-cta:hover{background:transparent;color:#fff;border-color:#fff}
 .hero-badge{width:min(260px,60vw);margin-bottom:1.6rem}.hero-badge .bj-badge-l{top:50%}
 @media (max-width:767px){.hero-badge{width:min(190px,52vw);margin-bottom:1rem}}
+/* v20 slim facts on mobile */
+.bjx-fshort{display:none}
+@media (max-width:767px){
+.bjx-testcopy{padding-top:1.6rem;padding-bottom:1.6rem}
+.hero-badge{width:min(150px,42vw);margin-bottom:.6rem}
+.bjx-hl{margin-bottom:.8rem}.bjx-hl2{margin:0 0 .6rem}.bjx-hl3{margin:0}
+.bjx-facts{margin-top:2rem}
+.bjx-fhead{margin-bottom:1.2rem;display:block}.bjx-fhead>p{display:none}
+.bjx-fhead h2{font-size:2.2rem;margin:0}.bjx-feyebrow{font-size:1.1rem;margin-bottom:.3rem}
+.bjx-fsteps{flex-direction:row!important;align-items:stretch!important;gap:.8rem!important}
+.bjx-fact{display:flex!important;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center!important;flex:1 1 0;min-width:0;padding:1.2rem .6rem!important;border-radius:1.6rem}
+.bjx-fact .bjx-ficon{min-height:0;height:78px;justify-content:flex-end;margin:0 0 .6rem!important}
+.bjx-fact h3,.bjx-fact p,.bjx-fact .bjx-fnum{display:none}
+.bjx-fshort{display:block;font-weight:800;color:#172a7b;font-size:1.3rem;line-height:1.25}
+.bjx-f45{font-size:3.4rem}.bjx-fml small{font-size:.5em}.bjx-drops{width:86px}.bjx-fic:has(.bjx-drops){height:auto}
+.bjx-eye{height:auto}.bjx-eye svg{width:70px}
+}
