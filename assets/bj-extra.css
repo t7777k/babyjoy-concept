@@ -143,3 +143,4 @@
 .s8-note{font-size:1.25rem;opacity:.85;margin:2rem 0 0}
 @media (max-width:767px){.s8-band{margin:7rem 0;padding:3rem 0 4rem}.s8-band::before,.s8-band::after{height:44px}.s8-band::before{top:-43px}.s8-band::after{bottom:-43px}.s8-logo{margin-top:-6rem;padding:1.6rem 3rem 1.2rem}.s8-brand{font-size:3.2rem}
 .s8-grid{grid-template-columns:1fr 1fr;gap:3rem 1.6rem}.s8-f img{width:116px;height:116px}.s8-f h3{font-size:1.8rem}.s8-f p{font-size:1.3rem}.s8-tag{font-size:2rem;margin-bottom:3rem}.s8-pack{max-width:300px}}
+.bjx .bjx-hl .bjx-em{font-style:normal;font-weight:800;color:#04A630;position:relative;white-space:nowrap;background:linear-gradient(transparent 72%,rgba(188,208,65,.55) 72%,rgba(188,208,65,.55) 90%,transparent 90%)}
