@@ -389,3 +389,4 @@
 @media (max-width:767px){.rv-tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;max-width:100%}.rv-tabs button{flex:0 0 auto;font-size:1.25rem;padding:.6rem 1.2rem}}
 @media (min-width:768px){.rv-grid{grid-template-columns:repeat(3,1fr)}.rv-grid .rv-card:nth-child(n+4){display:none}}
 @media (max-width:767px){.rv-tabs{display:inline-flex;overflow:visible;gap:.2rem;padding:.35rem}.rv-tabs button{font-size:1.12rem;padding:.55rem .85rem}}
+.rv-tr{font-size:1.05rem;color:#9a9a9a;font-style:italic;margin-top:-.4rem}
