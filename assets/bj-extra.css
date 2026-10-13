@@ -325,3 +325,9 @@
 @media (max-width:767px){.shop-band h2{font-size:2.6rem!important}.shop-tiles a{padding:.4rem}.shop-tiles img{max-height:52px}}
 .shop-tiles{grid-template-columns:repeat(6,minmax(0,1fr))}.shop-tiles a{min-width:0;overflow:hidden}.shop-tiles img{max-width:100%!important;object-fit:contain}
 @media (max-width:767px){.shop-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* v30 sampled sage colourway */
+.s8-band.shop-band{background-image:url('img/featured-bgr-1-sage.svg')!important}
+@media (max-width:767px){.s8-band.shop-band{background-image:url('img/featured-bgr-mobile-sage.svg')!important}}
+.shop-band h2{color:#2F4033!important}
+.shop-band .bjx-eyebrow{color:#697252!important}
+.shop-tiles a{background:#FDFDFD;border-color:#B5B99F;box-shadow:0 8px 20px rgba(100,115,79,.14)}
