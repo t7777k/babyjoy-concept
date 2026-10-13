@@ -476,3 +476,4 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.bjx-fill .wv{animation:none}}
 @media(min-width:768px){.bjx-ff{padding:2rem 1.6rem}}
 .bjx-beaker{display:flex;justify-content:center;padding-top:4px}.bjx-beaker svg{width:46px}@media(min-width:768px){.bjx-beaker svg{width:64px}}
+.bjx-ff .bjx-fml small{transition:color .5s ease 2.2s}.bjx-ff:not(.go) .bjx-fill .wv{display:none}
