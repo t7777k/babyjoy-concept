@@ -396,3 +396,23 @@
 .mt-lang{text-transform:none!important}.mt-lang li a{width:auto!important;min-width:4rem;padding:0 1.2rem;border-radius:5rem!important;white-space:nowrap}
 .mt-header .row>.col-2{flex:0 0 auto;width:auto}.mt-header .row>.col-10{flex:1 1 0;min-width:0;width:auto}
 @media(max-width:767px){.mt-header .mt-social li{padding:0 4px}.mt-lang li{padding:0 4px}.mt-lang li a{padding:0 .9rem}}
+/* v40 mobile menu */
+.bjx-burger{display:none}
+@media(max-width:991px){
+.mt-header .row>.col-2 .mt-lang{display:none!important}
+.mt-header .row>.col-2{display:flex;align-items:center}
+.bjx-burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;border:0;border-radius:50%;background:var(--secondary-color,#e05a1c);padding:0 12px;cursor:pointer}
+.bjx-burger span{display:block;height:2px;border-radius:2px;background:#fff}
+}
+.bjx-mm{position:fixed;inset:0;z-index:10050}
+.bjx-mm-bg{position:absolute;inset:0;background:rgba(20,30,20,.45);opacity:0;transition:opacity .2s}
+.bjx-mm-p{position:absolute;top:0;bottom:0;width:min(82vw,320px);background:#fff;box-shadow:0 0 30px rgba(0,0,0,.2);padding:14px 18px 24px;transition:transform .22s ease;overflow-y:auto}
+[dir=rtl] .bjx-mm-p,html[lang^=ar] .bjx-mm-p{left:0;transform:translateX(-100%)}
+html:not([lang^=ar]) .bjx-mm-p{right:0;transform:translateX(100%)}
+.bjx-mm.on .bjx-mm-bg{opacity:1}.bjx-mm.on .bjx-mm-p{transform:none!important}
+.bjx-mm-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.bjx-mm-lang{background:var(--secondary-color,#e05a1c);color:#fff!important;font-weight:700;font-size:13px;border-radius:5rem;padding:8px 16px;text-decoration:none}
+.bjx-mm-x{width:44px;height:44px;border:0;background:#f3f3f1;border-radius:50%;font-size:26px;line-height:1;color:var(--p,#172A7B);cursor:pointer}
+.bjx-mm nav{display:flex;flex-direction:column}
+.bjx-mm nav a{display:flex;align-items:center;min-height:50px;padding:0 6px;border-bottom:1px solid #eceee6;color:var(--p,#172A7B);font-weight:700;font-size:16px;text-decoration:none}
+.bjx-mm nav a:active{background:#f6f7f2}

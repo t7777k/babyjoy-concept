@@ -91,7 +91,7 @@ select.mt-field{appearance:auto}
 .en-intro p{color:#0f1577;font-weight:600;font-size:clamp(17px,2vw,24px);line-height:1.35;margin:0}
 .mt-legal{max-width:860px;margin:0 auto;padding:clamp(110px,16vw,210px) 20px 80px;text-align:start}.mt-legal h1{color:#172a7b;font-weight:800;margin:20px 0;font-size:clamp(28px,5vw,48px)}.mt-legal .ph{background:#fff4d6;color:#6b4e00;border-radius:12px;padding:10px 14px;font-size:1.4rem}
 </style>
-<link rel="stylesheet" href="assets/bj-extra.css?v=39">
+<link rel="stylesheet" href="assets/bj-extra.css?v=40">
 </head>
 
 <body class="rtl home wp-singular page-template page-template-templates page-template-home-2025 page-template-templateshome-2025-php page page-id-187 wp-custom-logo wp-theme-babyjoy no-sidebar">
@@ -145,7 +145,7 @@ select.mt-field{appearance:auto}
 				</div>
 
 				<div class="col-2 col-md-5">
-					<ul class="mt-lang d-flex justify-content-end">
+					<button type="button" class="bjx-burger" aria-controls="bjx-mm" aria-expanded="false" aria-label="فتح القائمة"><span></span><span></span><span></span></button><ul class="mt-lang d-flex justify-content-end">
 									<li class="lang-item lang-item-5 lang-item-en lang-item-first"><a lang="en-US" hreflang="en-US" href="en/terms.html">English</a></li>
 							</ul>
 				</div>
@@ -194,6 +194,11 @@ hideDiv.addEventListener('click', function () {
 
 
 <div class="concept-note" role="note">نموذج تجريبي (Concept)</div>
+<div class="bjx-mm" id="bjx-mm" hidden><div class="bjx-mm-bg" data-close></div><div class="bjx-mm-p" role="dialog" aria-modal="true" aria-label="القائمة"><div class="bjx-mm-top"><a class="bjx-mm-lang" href="en/terms.html" lang="en">English</a><button type="button" class="bjx-mm-x" data-close aria-label="إغلاق القائمة">&times;</button></div><nav aria-label="القائمة"><a href="index.html#test">الاختبار</a><a href="index.html#size-guide">دليل المقاسات</a><a href="index.html#olive">بريميوم زيتون</a><a href="index.html#compressed">مضغوطة</a><a href="index.html#size8">مقاس 8</a><a href="index.html#wipes">المناديل</a><a href="guide.html">دليل الأم</a></nav></div></div><script>(function(){var b=document.querySelector('.bjx-burger'),m=document.getElementById('bjx-mm');if(!b||!m)return;
+function op(){m.hidden=false;requestAnimationFrame(function(){m.classList.add('on')});b.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';m.querySelector('.bjx-mm-x').focus()}
+function cl(){m.classList.remove('on');b.setAttribute('aria-expanded','false');document.body.style.overflow='';setTimeout(function(){m.hidden=true},220);b.focus()}
+b.addEventListener('click',op);m.addEventListener('click',function(e){if(e.target.closest('[data-close]')||e.target.closest('nav a'))cl()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)cl()});})();</script>
 <script id="bjx-js">
 (function(){var st8=false;var D={"olive": {"tape": [["1", "0–4", "premium-1.webp", 0, 4], ["2", "3.5–7", "premium-2.webp", 3.5, 7], ["3", "6–12", "premium-3.webp", 6, 12], ["4", "10–18", "premium-4.webp", 10, 18], ["5", "14–23", "premium-5.webp", 14, 23], ["6", "16–25", "premium-6.webp", 16, 25]], "pants": [["3", "6–12", "premium-pants-3.jpg", 6, 12], ["4", "9–14", "premium-pants-4.jpg", 9, 14], ["5", "12–18", "premium-pants-5.jpg", 12, 18], ["6", "16–23", "premium-pants-6.jpg", 16, 23]]}, "s8": {"tape": [], "pants": [["8", "20+", "../../../../assets/img/size8-1.jpg", 20, 30]]}, "comp": {"tape": [["1", "0–4", "tape-1.jpg", 0, 4], ["2", "3.5–7", "tape-2.jpg", 3.5, 7], ["3", "6–12", "tape-3.jpg", 6, 12], ["4", "10–18", "tape-4-1.jpg", 10, 18], ["4+", "12–21", "tape-4.jpg", 12, 21], ["5", "14–23", "tape-5.jpg", 14, 23], ["6", "16–25", "tape-6.jpg", 16, 25], ["7", "18+", "tape-7.jpg", 18, 30]], "pants": [["3", "6–12", "baby-pants-3.webp", 6, 12], ["4", "TBC", "baby-pants-4.webp", null, null], ["5", "12–18", "baby-pants-5.webp", 12, 18], ["6", "16–23", "baby-pants-6.webp", 16, 23]]}};var T={"kg": "كغ", "olive": "بريميوم زيتون", "comp": "مضغوطة", "tape": "حفاض بلاصق", "pants": "كلوت", "none": "لا يوجد مقاس مطابق لهذا الوزن.", "also": "يناسب أيضاً", "ind": "استرشادي", "s8": "سوبر بيج", "fams": {"olive-tape": "بيبي جوي بريميوم زيتون – حفاض بلاصق", "olive-pants": "بيبي جوي بريميوم زيتون – كلوت", "compressed-tape": "بيبي جوي مضغوطة – حفاض بلاصق", "pants": "بيبي جوي مضغوطة – كلوت", "super-big-pants": "بيبي جوي سوبر بيج كلوت – مقاس 8"}};
 var sg=document.querySelector('.bjx-sg');if(sg){var p=sg.dataset.p,st={coll:'olive',type:'tape',mode:'weight',size:null},w=document.getElementById('sg-w'),o=document.getElementById('sg-o');

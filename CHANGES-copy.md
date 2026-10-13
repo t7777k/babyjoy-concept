@@ -65,3 +65,6 @@ Internal file – not linked from the site.
 - English "Mum's guide" → "Parent guide" everywhere (menu, footer, page title, heading, meta). Arabic stays دليل الأم.
 - About (EN): "mums" reverted to "parents".
 - Softest line: EN "Our softest diaper yet", AR «أنعم حفاض لدينا حتى الآن» (Premium Olive tape, Compressed tape, Compressed pants bands).
+
+## Mobile menu (13 Oct, 22:50)
+- Below 992px: hamburger in header (staging orange circle, left on AR, right on EN, replacing the header language pill). Slide-in panel from the same side with language switch, close button, and the same 7 desktop items in order. Closes on backdrop tap, Esc, link tap; aria-expanded/aria-controls, focus moves to close and back. All AR+EN pages.
