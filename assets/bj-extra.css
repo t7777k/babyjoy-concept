@@ -315,3 +315,11 @@
 .s8-band.shop-band{background-image:url('img/featured-bgr-1-green.svg')!important}
 @media (max-width:767px){.s8-band.shop-band{background-image:url('img/featured-bgr-mobile-green.svg')!important}}
 .shop-band .bjx-eyebrow{color:#fff!important;opacity:.95}
+/* v28 grey shop band */
+.s8-band.shop-band{background-image:url('img/featured-bgr-1-grey.svg')!important}
+@media (max-width:767px){.s8-band.shop-band{background-image:url('img/featured-bgr-mobile-grey.svg')!important}}
+.shop-band h2{color:#172A7B!important;font-weight:900!important;font-size:clamp(2.6rem,3.8vw,4.4rem)!important}
+.shop-band .bjx-eyebrow{color:#64734F!important;opacity:1;font-weight:800}
+.shop-tiles a{background:#fff;border:1px solid #e2e2e2;box-shadow:0 10px 24px rgba(23,42,123,.14)}
+.shop-tiles img{max-height:80px}
+@media (max-width:767px){.shop-band h2{font-size:2.6rem!important}.shop-tiles a{padding:.4rem}.shop-tiles img{max-height:52px}}
