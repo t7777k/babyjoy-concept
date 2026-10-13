@@ -96,3 +96,4 @@
 .bjx .mt-btn{background:var(--p);border-color:var(--p);color:#fff}.bjx .mt-btn:hover{background:transparent;color:var(--p);border-color:var(--p)}
 .bjx-olive .mt-btn{background:#fff;border-color:#fff;color:var(--p)}.bjx-olive .bjx-res .mt-btn{background:var(--p);border-color:var(--p);color:#fff}
 .bjx-res .pk img,.bjx-pp .pk img,.bjx-fam img{mix-blend-mode:multiply}
+.bjx-fam img{display:block}.bjx .mt-btn{white-space:nowrap;height:auto;padding:14px 28px 12px}
