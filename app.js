@@ -11,5 +11,8 @@ if(f){const go=()=>{const r=f.range.value,t=f.type.value,w=parseFloat(f.weight.v
  f.addEventListener('input',go);f.addEventListener('submit',e=>{e.preventDefault();go()});go();}
 document.querySelectorAll('.sizes').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
  g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));g.nextElementSibling.textContent=b.dataset.spec}));
-document.querySelectorAll('.play').forEach(p=>p.addEventListener('click',()=>{p.textContent='⏸';p.setAttribute('aria-label','paused placeholder')}));
+
 const c=document.getElementById('contact');if(c)c.addEventListener('submit',e=>{e.preventDefault();c.querySelector('.ok').hidden=false});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.mute').forEach(b=>b.addEventListener('click',()=>{const v=b.parentElement.querySelector('video');if(v.paused){v.play();b.textContent='❚❚'}else{v.pause();b.textContent='▶'}}));

@@ -1,13 +1,13 @@
 import json
 D={'olive':{'tape':[['NB','0–5'],['S','4–8'],['M','6–11'],['L','9–14'],['XL','12–17']],'pants':[['M','6–11'],['L','9–14'],['XL','12–17'],['XXL','15–25']]},
 'regular':{'tape':[['1','2–5'],['2','3–8'],['3','6–11'],['4','9–14'],['5','12–17']],'pants':[['3','6–11'],['4','TBC*'],['5','12–17'],['6','15–25']]}}
-RET=[('Al-Dawaa','الدواء'),('Nahdi','النهدي'),('noon','نون'),('Amazon.sa','أمازون'),('FirstCry','فيرست كراي'),('Mumzworld','ممزورلد')]
+RET=[('Al-Dawaa','الدواء','al-dawaa-logo.png'),('Nahdi','النهدي','nahdi-logo.png'),('noon','نون','noon-logo-1.png'),('Amazon.sa','أمازون','amazon-logo.png'),('FirstCry','فيرست كراي','first-cry.png'),('Mumzworld','ممزورلد','mumzworld-min.png')]
 T={
 'ar':dict(dir='rtl',other='en/',otherlbl='English',p='',title='بيبي جوي السعودية | حفاضات بحماية من التسرب – اختبار ٤٥°',desc='اكتشفي حفاضات بيبي جوي: بريميوم زيتون، اللاصق والسروال. شاهدي اختبار الزاوية ٤٥° واعثري على المقاس المناسب لطفلك واشتري من متجرك المفضل.',
 proto='نموذج تجريبي — بيانات المنتجات افتراضية ويجب التحقق منها مقابل ملف SKU الرئيسي',
 nav=['الاختبار','المنتجات','اختر المقاس','نصائح','تواصل معنا'],
 eb='اختبار الزاوية ٤٥°',h1='اختبار واحد... والفرق واضح.',sub='حماية من التسرب، حتى مع حركة طفلك.',lead='شاهد الفرق بين بيبي جوي وحفاض آخر، بنفس الزاوية وكمية السائل.',
-cta='اعثري على المقاس المناسب',cta2='شاهدي المنتجات',bj='بيبي جوي',oth='حفاض آخر',ok='✓ بدون تسرب',bad='✗ تسرب',capt='٤٥° · نفس كمية السائل · نفس الزمن',play='تشغيل الفيديو',
+filmh='بيبي جوي... قد التحدي',filml='الحفاض الذي تختاره الأمهات بثقة، في كل مرحلة.',cta='اعثري على المقاس المناسب',cta2='شاهدي المنتجات',bj='بيبي جوي',oth='حفاض آخر',ok='✓ بدون تسرب',bad='✗ تسرب',capt='٤٥° · نفس كمية السائل · نفس الزمن',play='تشغيل الفيديو',
 cond='ظروف الاختبار',condt='[نص افتراضي] يُثبَّت كل حفاض على سطح مائل بزاوية ٤٥°، ويُسكب نفس حجم السائل بنفس المعدل، ثم يُقارن التسرب بصرياً بعد مدة محددة. يجب إرفاق المنهجية الموثقة ونتائج الاختبار المعتمدة قبل الإطلاق.',
 ph='بيانات افتراضية',prodh='أربع عائلات، لكل طفل ما يناسبه',prodl='اختاري العائلة ثم المقاس. المواصفات أدناه تجريبية.',
 fam=[('olive','olive-tape.webp','بريميوم زيتون – لاصق','بريميوم','لعناية فائقة بالبشرة الحساسة',['ملمس ناعم مع لمسة زيت الزيتون*','لاصق مرن قابل للتعديل','مؤشر رطوبة*']),
@@ -32,7 +32,7 @@ foot='© ٢٠٢٦ بيبي جوي السعودية — نموذج تصميم ت�
 proto='Concept prototype — product data is placeholder and must be verified against the master SKU file',
 nav=['The test','Products','Size finder','Tips','Contact'],
 eb='The 45° test',h1='One test. A clear difference.',sub='Leak protection, even when your baby moves.',lead='See the difference between BabyJoy and another diaper — same angle, same amount of liquid.',
-cta='Find the right size',cta2='See products',bj='BabyJoy',oth='Other diaper',ok='✓ No leak',bad='✗ Leaked',capt='45° · same liquid · same time',play='Play video',
+filmh='BabyJoy. Up to the challenge.',filml='The diaper parents choose with confidence, at every stage.',cta='Find the right size',cta2='See products',bj='BabyJoy',oth='Other diaper',ok='✓ No leak',bad='✗ Leaked',capt='45° · same liquid · same time',play='Play video',
 cond='Test conditions',condt='[Placeholder] Each diaper is fixed on a 45° inclined surface; the same volume of liquid is poured at the same rate, and leakage is compared visually after a set time. Documented methodology and verified results must be attached before launch.',
 ph='Placeholder data',prodh='Four families, one for every baby',prodl='Choose a family, then a size. Specs below are placeholders.',
 fam=[('olive','olive-tape.webp','Premium Olive – Tape','Premium','Extra care for sensitive skin',['Soft touch with olive oil*','Flexible, adjustable tapes','Wetness indicator*']),
@@ -54,15 +54,17 @@ ch='Contact us',name='Name',email='Email',mob='Mobile number',reason='Reason',re
 consent='I agree to the processing of my data to respond to my enquiry, per the Privacy Policy.',send='Send',sent='Thanks! (Prototype — no data was sent)',
 foot='© 2026 BabyJoy Saudi Arabia — design concept prototype',priv='Privacy policy',terms='Terms'),
 }
+B='https://t7777k.github.io/babyjoy-concept'
 ids=['test','products','finder','tips','contact']
 def page(l):
     t=T[l];p=t['p'];a=l=='ar'
-    ret=''.join(f'<a href="#" rel="nofollow">{r[1] if a else r[0]}</a>' for r in RET)
+    ret=''.join(f'<a href="#" rel="nofollow" title="{r[1] if a else r[0]}"><img src="{p}img/{r[2]}" alt="{r[1] if a else r[0]}" loading="lazy"></a>' for r in RET)
     cards=''
     for i,(rg,img,nm,tier,tag,ben) in enumerate(t['fam']):
         typ='tape' if i in(0,2) else 'pants'
         btns=''.join(f'<button type="button" aria-pressed="false" data-spec="{t["sz"].rstrip(":")} {s}: {g} {t["kg"]} · {t["pack"]} ({t["ph"]})">{s}</button>' for s,g in D[rg][typ])
-        cards+=f'''<article class="card {'olive' if rg=='olive' else ''}"><img src="{p}img/{img}" alt="{nm}" loading="lazy" width="400" height="400"><span class="pill">{tier}</span><h3>{nm}</h3><p class="small">{tag}</p><ul class="ben">{''.join(f'<li>{b}</li>' for b in ben)}</ul><div class="small">{t['sz']}</div><div class="sizes" role="group" aria-label="{t['sz']}">{btns}</div><div class="spec" aria-live="polite">{t['pick']}</div><details><summary>{t['buy']}</summary><div class="retail">{ret}</div></details></article>'''
+        fam=['f-olive','f-olive2','f-teal','f-blue'][i]
+        cards+=f'''<article class="card pcard {fam} reveal"><div class="pimg"><img src="{p}img/{img}" alt="{nm}" loading="lazy" width="400" height="400"></div><span class="pill">{tier}</span><h3>{nm}</h3><p class="small">{tag}</p><ul class="ben">{''.join(f'<li>{b}</li>' for b in ben)}</ul><div class="small">{t['sz']}</div><div class="sizes" role="group" aria-label="{t['sz']}">{btns}</div><div class="spec" aria-live="polite">{t['pick']}</div><details><summary>{t['buy']}</summary><div class="retail">{ret}</div></details></article>'''
     th=''.join(f'<th scope="col">{c}</th>' for c in t['cols'])
     rows=''.join('<tr><th scope="row">'+r[0]+'</th>'+''.join(f'<td>{c}</td>' for c in r[1:])+'</tr>' for r in t['rows'])
     how=''.join(f'<div><h3>{h}</h3><p class="small">{x}</p></div>' for h,x in t['how'])
@@ -72,18 +74,20 @@ def page(l):
     opts=''.join(f'<option>{r}</option>' for r in t['reasons'])
     return f'''<!doctype html><html lang="{l}" dir="{t['dir']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t['title']}</title><meta name="description" content="{t['desc']}"><meta name="robots" content="noindex,nofollow">
-<link rel="alternate" hreflang="ar-SA" href="/"><link rel="alternate" hreflang="en-SA" href="/en/"><link rel="alternate" hreflang="x-default" href="/"><link rel="canonical" href="{'/' if a else '/en/'}">
-<link rel="icon" href="{p}img/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="{p}style.css"></head><body>
+<link rel="alternate" hreflang="ar-SA" href="{B}/"><link rel="alternate" hreflang="en-SA" href="{B}/en/"><link rel="alternate" hreflang="x-default" href="{B}/"><link rel="canonical" href="{B}{'/' if a else '/en/'}">
+<link rel="icon" href="{p}img/favicon.png"><link rel="stylesheet" href="{p}fonts/fonts.css"><link rel="stylesheet" href="{p}style.css"></head><body>
 <div class="proto" role="note">⚠ {t['proto']}</div>
 <header><div class="wrap nav"><a href="#"><img src="{p}img/logo.png" alt="BabyJoy" width="110" height="40"></a><nav aria-label="main">{nav}</nav><a class="lang" href="{t['other']}" hreflang="{'en' if a else 'ar'}">{t['otherlbl']}</a></div></header>
-<main><section class="hero" id="test"><div class="wrap grid"><div><div class="eyebrow">{t['eb']}</div><h1>{t['h1']}</h1><p class="sub">{t['sub']}</p><p class="lead">{t['lead']}</p>
-<p><a class="btn" href="#finder">{t['cta']}</a> <a class="btn ghost" href="#products">{t['cta2']}</a></p>
-<details><summary>{t['cond']}</summary><p>{t['condt']}</p></details></div>
-<div class="vidcol"><div class="video" role="img" aria-label="{t['capt']}"><div class="half a"><div class="dia"><span class="drop"></span></div><span class="tag">{t['bj']} {t['ok']}</span></div><div class="half b"><div class="dia"><span class="drop"></span></div><span class="tag">{t['oth']} {t['bad']}</span></div>
-<div class="cap">{t['capt']} · <span class="ph">{t['ph']}</span></div><button class="play" aria-label="{t['play']}">▶</button></div></div></div></section>
+<main><section class="hero" id="test"><div class="wrap grid"><div class="reveal"><span class="eyebrow">{t['eb']}</span><h1>{t['h1']}</h1><p class="sub">{t['sub']}</p><p class="lead">{t['lead']}</p>
+<div class="ctas"><a class="btn" href="#finder">{t['cta']}</a><a class="btn ghost" href="#products">{t['cta2']}</a></div>
+<details class="cond"><summary>{t['cond']}</summary><p>{t['condt']}</p></details></div>
+<div class="vidcol reveal"><figure class="video"><video id="v45" src="{p}img/test45.mp4" poster="{p}img/test45-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="{t['capt']}"></video>
+<figcaption><span class="chip ok">{t['bj']} {t['ok']}</span><span class="chip">{t['capt']}</span></figcaption><button class="mute" type="button" aria-label="{t['play']}">❚❚</button></figure>
+<img class="slogan" src="{p}img/babyjoy-slogan-new-1.svg" alt="" aria-hidden="true"></div></div>
+<div class="retailbar wrap reveal"><span>{t['buy']}</span><div class="retail">{ret}</div></div></section>
+<section class="film"><video src="{p}img/hero.mp4" poster="{p}img/hero-poster.jpg" autoplay muted loop playsinline preload="none" aria-hidden="true"></video><div class="wrap filmtxt reveal"><h2>{t['filmh']}</h2><p>{t['filml']}</p></div></section>
 <section id="products"><div class="wrap"><h2>{t['prodh']}</h2><p class="lead">{t['prodl']}</p><div class="cards">{cards}</div>
-<article class="card olive" style="margin-top:20px;display:flex;gap:18px;align-items:center"><div style="font-size:48px">🧻</div><div><h3>{t['wipes']}</h3><p class="small">{t['wipesl']}</p></div></article></div></section>
+<article class="card wipes reveal"><div class="wicon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="8" y="14" width="32" height="24" rx="6"/><path d="M18 14c0-4 12-4 12 0M16 26h16"/></svg></div><div><h3>{t['wipes']}</h3><p class="small">{t['wipesl']}</p></div></article></div></section>
 <section id="finder" class="alt"><div class="wrap"><form class="finder" id="finder-form" style="display:block" name="finder" onsubmit="return false"><h2>{t['fh']}</h2><p style="color:#cfd6ea">{t['fl']}</p>
 <div class="steps"><div><label for="fr">{t['f1']}</label><select id="fr" name="range"><option value="{t['ro'][0]}">{t['ro'][1]}</option><option value="{t['rr'][0]}">{t['rr'][1]}</option></select></div>
 <div><label for="ft">{t['f2']}</label><select id="ft" name="type"><option value="tape">{t['tt']}</option><option value="pants">{t['tp']}</option></select></div>
@@ -91,8 +95,8 @@ def page(l):
 <div class="result" id="fres" aria-live="polite"></div><p class="small" style="color:#cfd6ea;margin-top:14px">{t['buy']}</p><div class="retail">{ret}</div></form>
 <h2 style="margin-top:48px">{t['cmp']}</h2><div class="tbl"><table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></div><p class="small">{t['note']}</p></div></section>
 <section><div class="wrap"><h2>{t['howh']}</h2><div class="how">{how}</div></div></section>
-<section id="tips" class="alt"><div class="wrap"><h2>{t['guideh']}</h2><div class="cards">{guide}</div><h2 style="margin-top:48px">{t['faqh']}</h2><div class="faq">{faq}</div></div></section>
-<section><div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;align-items:center"><div><h2>{t['abh']}</h2><p class="lead">{t['abt']}</p></div><img src="{p}img/hero.jpg" alt="{t['abh']}" loading="lazy" style="border-radius:24px"></div></section>
+<section id="tips" class="alt"><div class="wrap"><div class="tipshead"><div><h2>{t['guideh']}</h2></div><!-- AI-generated CONCEPT imagery (Higgsfield) --><img class="photo" src="{p}img/concept-toddler.jpg" alt="" loading="lazy"></div><div class="cards">{guide}</div><h2 style="margin-top:48px">{t['faqh']}</h2><div class="faq">{faq}</div></div></section>
+<section><div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;align-items:center"><div><h2>{t['abh']}</h2><p class="lead">{t['abt']}</p></div><!-- AI-generated CONCEPT imagery (Higgsfield) — replace with licensed brand photography --><img class="photo" src="{p}img/concept-family.jpg" alt="" loading="lazy"></div></section>
 <section id="contact" class="alt"><div class="wrap" style="max-width:760px"><h2>{t['ch']}</h2><form id="contact">
 <div><label for="cn">{t['name']}</label><input id="cn" required autocomplete="name"></div><div><label for="ce">{t['email']}</label><input id="ce" type="email" required autocomplete="email" dir="ltr"></div>
 <div><label for="cm">{t['mob']}</label><input id="cm" type="tel" placeholder="05XXXXXXXX" autocomplete="tel" dir="ltr"></div><div><label for="cr">{t['reason']}</label><select id="cr">{opts}</select></div>

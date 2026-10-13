@@ -3,9 +3,9 @@ def FOOT(l):
     L=[('about.html','عن بيبي جوي','About'),('contact.html','تواصل معنا','Contact'),('privacy.html','سياسة الخصوصية','Privacy'),('terms.html','الشروط والأحكام','Terms')]
     links=''.join(f'<li><a href="{h}">{x if a else y}</a></li>' for h,x,y in L)
     ret=''.join(f'<li><a href="#" rel="nofollow">{r[1] if a else r[0]}</a></li>' for r in RET)
-    soc=''.join(f'<li><a href="#">{n}</a></li>' for n in ['Instagram','TikTok','X','YouTube','Facebook'])
+    pp='' if a else '../';soc='<li class="soc">'+''.join(f'<a href="#" aria-label="{n}"><img src="{pp}img/{f}" alt="{n}" width="22" height="22"></a>' for n,f in [('Instagram','instagram-icon.svg'),('TikTok','tiktok-icon.svg'),('X','twitter-icon.svg'),('YouTube','youtube-icon.svg'),('Facebook','facebook-icon.svg')])+'</li>'
     h=('الصفحات','اشتري من','تابعنا') if a else ('Pages','Buy at','Follow us')
-    return f'''<footer><div class="wrap fgrid"><div><img src="{'' if a else '../'}img/logo.png" alt="BabyJoy" width="110" style="background:#fff;border-radius:12px;padding:6px 10px;margin-bottom:10px"><p>{'علامة تجارية للعناية بالطفل — نوجّهك لشراء منتجاتنا من شركائنا المعتمدين.' if a else 'A baby-care brand — we guide you to buy from our authorised retail partners.'}</p></div>
+    return f'''<footer><div class="wrap fgrid"><div><img src="{'' if a else '../'}img/logo.png" alt="BabyJoy" width="110" class="flogo"><p>{'علامة تجارية للعناية بالطفل — نوجّهك لشراء منتجاتنا من شركائنا المعتمدين.' if a else 'A baby-care brand — we guide you to buy from our authorised retail partners.'}</p></div>
 <div><h4>{h[0]}</h4><ul>{links}</ul></div><div><h4>{h[1]}</h4><ul>{ret}</ul></div><div><h4>{h[2]}</h4><ul>{soc}</ul></div></div>
 <div class="wrap fbot">{t['foot']}<br><span class="small" style="color:#cfd6ea">{t['proto']}</span></div></footer>'''
 SUB={'about':(('عن بيبي جوي','About BabyJoy'),('abt',)),'privacy':(('سياسة الخصوصية','Privacy Policy'),None),'terms':(('الشروط والأحكام','Terms & Conditions'),None),'contact':(('تواصل معنا','Contact us'),None)}
@@ -20,13 +20,13 @@ def sub(l,k):
     if k=='contact':
         body=h[h.index('<section id="contact"'):h.index('</section></main>')+10]
     elif k=='about':
-        body=f'<section><div class="wrap" style="max-width:820px"><h1>{title}</h1><p class="lead">{T[l]["abt"]}</p><img src="img/hero.jpg" alt="" style="border-radius:24px;margin:24px 0"><h2>{"رسالتنا" if a else "Our mission"}</h2><p>{"راحة الطفل وطمأنينة الأم في كل يوم. [نص افتراضي]" if a else "Comfort for babies and peace of mind for parents, every day. [Placeholder]"}</p></div></section>'
+        body=f'<section><div class="wrap" style="max-width:820px"><h1>{title}</h1><p class="lead">{T[l]["abt"]}</p><img class="photo" src="{'' if a else '../'}img/hero-poster.jpg" alt="" style="margin:24px 0"><h2>{"رسالتنا" if a else "Our mission"}</h2><p>{"راحة الطفل وطمأنينة الأم في كل يوم. [نص افتراضي]" if a else "Comfort for babies and peace of mind for parents, every day. [Placeholder]"}</p></div></section>'
     else:
         items=(PRIV if k=='privacy' else TERMS)[l]
         body=f'<section><div class="wrap" style="max-width:820px"><h1>{title}</h1><p class="proto" style="border-radius:10px">{LEG[l]}</p><ol>{"".join(f"<li><p>{i}</p></li>" for i in items)}</ol><p class="small">{"آخر تحديث: —" if a else "Last updated: —"}</p></div></section>'
     h=h[:start]+'<main>'+body+'</main>'+h[end:]
     h=h.replace(f'<title>{T[l]["title"]}</title>',f'<title>{title} | {"بيبي جوي السعودية" if a else "BabyJoy Saudi Arabia"}</title>')
-    h=h.replace('href="/"',f'href="/{k}.html"').replace('href="/en/"',f'href="/en/{k}.html"').replace(f'href="{T[l]["other"]}" hreflang',f'href="{T[l]["other"]}{k}.html" hreflang')
+    h=h.replace(f'href="{B}/"',f'href="{B}/{k}.html"').replace(f'href="{B}/en/"',f'href="{B}/en/{k}.html"').replace(f'href="{T[l]["other"]}" hreflang',f'href="{T[l]["other"]}{k}.html" hreflang')
     h=h.replace('<a href="#"><img src','<a href="./"><img src').replace('<a href="#',f'<a href="./#').replace('href="./#" rel','href="#" rel')
     return h
 import os
