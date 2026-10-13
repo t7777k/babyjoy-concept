@@ -311,3 +311,7 @@
 #size-guide .bjx-res{gap:1.2rem;padding:1rem}
 #size-guide .bjx-res .pk{flex-basis:120px;width:120px!important;height:120px}
 #size-guide .bjx-res h3{font-size:1.5rem}}
+/* v27 green shop band */
+.s8-band.shop-band{background-image:url('img/featured-bgr-1-green.svg')!important}
+@media (max-width:767px){.s8-band.shop-band{background-image:url('img/featured-bgr-mobile-green.svg')!important}}
+.shop-band .bjx-eyebrow{color:#fff!important;opacity:.95}
