@@ -511,3 +511,4 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .bjx-win figcaption{position:static;padding:1rem .8rem 1.2rem}
 .bjx-win-bj figcaption{background:#04A630}.bjx-win-ot figcaption{background:#6b7178}
 @media(max-width:767px){.bjx-win figcaption{padding:.8rem .6rem 1rem;gap:.4rem}}
+.bjx-win{max-width:none}.bjx-win-grid{max-width:640px;margin:0 auto}
