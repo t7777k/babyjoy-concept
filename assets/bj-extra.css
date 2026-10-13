@@ -533,3 +533,6 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 @keyframes bjglow{0%,100%{filter:drop-shadow(0 4px 8px rgba(4,166,48,.25))}50%{filter:drop-shadow(0 0 16px rgba(4,166,48,.6))}}
 .bjx-fact.now *,.bjx-fact.now::before{transition:none!important;animation:none!important}
 @media(prefers-reduced-motion:reduce){.bjx-fact *{transition:none!important;animation:none!important}}
+/* v50 explainer lines visible on mobile */
+@media(max-width:767px){.bjx-fact p{display:block!important;font-size:1.1rem;line-height:1.3;color:#5b6475;margin:.3rem 0 0;font-weight:500}}
+.bjx-ff.go p{color:#fff!important;opacity:.95}
