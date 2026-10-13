@@ -222,3 +222,5 @@
 }
 .bjx-cta{display:inline-flex;align-items:center;justify-content:center;min-width:220px;border-radius:5rem}
 .s8-band .bjx-cta{background:#fff;border-color:#fff;color:#1d2a7a}.s8-band .bjx-cta:hover{background:transparent;color:#fff;border-color:#fff}
+.hero-badge{width:min(260px,60vw);margin-bottom:1.6rem}.hero-badge .bj-badge-l{top:50%}
+@media (max-width:767px){.hero-badge{width:min(190px,52vw);margin-bottom:1rem}}
