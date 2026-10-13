@@ -54,3 +54,8 @@ Internal file – not linked from the site.
 - Privacy EN: "We may share it with service providers who work for us under contract."
 - Terms: "BabyJoy is a trademark of Unicharm. Retailer names and logos belong to their owners." (+ AR).
 - Products page meta description: "All BabyJoy diapers, pants and wipes in Saudi Arabia, with sizes and where to buy." (+ AR).
+
+## Follow-up (13 Oct, evening)
+- Arabic test caption added for parity: «بيبي جوي (على اليسار) مقابل حفاض آخر (على اليمين)، بنفس الزاوية ونفس كمية السائل. عينة الاختبار: مقاس 4.»
+- Arabic kg ranges checked site-wide: all wrapped in <bdi dir="ltr"> (size guide, product pages, size-button data); glyph positions confirm 6 renders left of 12.
+- Email and company name sourced from the copy doc (section 4, Contact and About rows) – kept.
