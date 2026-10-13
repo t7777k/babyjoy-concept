@@ -538,3 +538,4 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .bjx-ff.go p{color:#fff!important;opacity:.95}
 @media(max-width:767px){.bjx-fact p{order:5}.bjx-fact .bjx-fshort{order:4}}
 .bjx-fshort:empty{display:none!important}
+.bjx-fact p:empty{display:none!important}
