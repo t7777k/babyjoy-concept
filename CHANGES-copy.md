@@ -87,3 +87,4 @@ Internal file – not linked from the site.
 
 ## 13 Oct, 23:45
 - Homepage product bands: all "Shop BabyJoy …" / «تسوقي …» buttons removed (Premium Olive, Compressed, Size 8, Wipes, every tab). The pack card is now the link to the matching product page (hover lift kept, keyboard focus ring); icons flow straight into the pack.
+- 125 ml tile: drops replaced by an animated measuring beaker. Liquid colour #0A86B8 sampled from the test video (dominant blue in the diapers, about rgb(0,128,176)). When the tile scrolls into view, the beaker fills and then the blue rises with a subtle surface wave to fill the whole tile, then holds; the text switches to white. Under prefers-reduced-motion the filled state shows straight away.
