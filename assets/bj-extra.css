@@ -512,3 +512,24 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .bjx-win-bj figcaption{background:#04A630}.bjx-win-ot figcaption{background:#6b7178}
 @media(max-width:767px){.bjx-win figcaption{padding:.8rem .6rem 1rem;gap:.4rem}}
 .bjx-win{max-width:none}.bjx-win-grid{max-width:640px;margin:0 auto}
+/* v49 tile animations: 45° + check, staggered (JS adds .go per tile 0/0.7/1.4s) */
+.bjx-fact:first-child{position:relative;overflow:hidden;isolation:isolate}
+.bjx-fact:first-child::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#e6f2df,#f6f8f1 70%);opacity:0;transition:opacity 1.2s ease .4s;z-index:-1}
+.bjx-fact.go:first-child::before{opacity:1}
+.bjx-ang{display:flex;justify-content:center}
+.bjx-ang svg{width:62px;height:auto;overflow:visible}
+@media(min-width:768px){.bjx-ang svg{width:84px}}
+.bjx-ang .bar{transform-box:view-box;transform-origin:10px 56px;transition:transform 1.2s cubic-bezier(.3,1.3,.5,1)}
+.bjx-fact:not(.go) .bjx-ang .bar{transform:rotate(0)}
+.bjx-fact.go .bjx-ang .bar{transform:rotate(-45deg)}
+.bjx-ang .arc{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.2s ease .1s}
+.bjx-fact.go .bjx-ang .arc{stroke-dashoffset:0}
+.bjx-f45 .n{font-variant-numeric:tabular-nums}
+.bjx-chk svg{transform:scale(0);opacity:0;transition:transform .55s cubic-bezier(.2,1.6,.4,1),opacity .3s}
+.bjx-fact.go .bjx-chk svg{transform:scale(1);opacity:1}
+.bjx-chk .tick{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .6s ease .5s}
+.bjx-fact.go .bjx-chk .tick{stroke-dashoffset:0}
+.bjx-fact.go .bjx-chk svg{animation:bjglow 2.4s ease-in-out 1.2s infinite}
+@keyframes bjglow{0%,100%{filter:drop-shadow(0 4px 8px rgba(4,166,48,.25))}50%{filter:drop-shadow(0 0 16px rgba(4,166,48,.6))}}
+.bjx-fact.now *,.bjx-fact.now::before{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.bjx-fact *{transition:none!important;animation:none!important}}
