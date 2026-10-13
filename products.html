@@ -205,7 +205,7 @@ var hits=list.filter(function(s){return s[3]!==null&&v>=s[3]&&v<=s[4]});var best
 if(hits.length>1){best=hits.find(function(s){return v<=s[4]-1.5})||hits[hits.length-1];}
 if(!best&&v>=20){best=D.s8.pants[0];st8=true}else{st8=false}
 var name=st8?T.s8+' · '+T.pants:(st.coll=='olive'?T.olive:T.comp)+' · '+(st.type=='tape'?T.tape:T.pants);document.getElementById('sg-n').textContent=name;
-var slug=st8?'super-big-pants':st.coll=='olive'?(st.type=='tape'?'olive-tape':'olive-pants'):(st.type=='tape'?'compressed-tape':'pants');document.getElementById('sg-link').href=(sg.dataset.lp||'')+'product-'+slug+'.html';
+var slug=st8?'super-big-pants':st.coll=='olive'?(st.type=='tape'?'olive-tape':'olive-pants'):(st.type=='tape'?'compressed-tape':'pants');
 if(best){document.getElementById('sg-s').textContent=best[0];document.getElementById('sg-k').innerHTML='<bdi dir="ltr">'+best[1]+'</bdi> '+T.kg+' <span class="bjx-ph">'+T.ind+'</span>';var im=document.getElementById('sg-img');im.src=p+'wp-content/uploads/2026/06/'+best[2];im.alt=name+' – '+best[0];
 var others=hits.filter(function(s){return s!==best}).map(function(s){return s[0]});if(!st8&&v>=20)others.push('8 ('+T.s8+')');document.getElementById('sg-a').textContent=others.length?(T.also+': '+others.join(', ')):'';}
 else{document.getElementById('sg-s').textContent='–';document.getElementById('sg-k').textContent=T.none;document.getElementById('sg-a').textContent='';}}

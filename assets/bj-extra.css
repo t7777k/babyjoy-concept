@@ -220,3 +220,5 @@
 .s8-band.bj-curve .s8-cta{margin-top:1.8rem}.s8-pack{max-width:230px;margin-top:1.8rem}
 .s8-note{margin-top:1rem}
 }
+.bjx-cta{display:inline-flex;align-items:center;justify-content:center;min-width:220px;border-radius:5rem}
+.s8-band .bjx-cta{background:#fff;border-color:#fff;color:#1d2a7a}.s8-band .bjx-cta:hover{background:transparent;color:#fff;border-color:#fff}
