@@ -446,3 +446,8 @@ html:not([lang^=ar]) .bjx-mm-p{right:0;transform:translateX(100%)}
 /* slogan off the video on mobile */
 @media(max-width:991px){.mt-header{position:relative!important}.mt-main_banner{margin-top:0!important}.mt-slogan img{margin-top:4px!important}.mt-slogan{padding-bottom:8px}}
 @media(max-width:991px){.mt-header{height:auto!important;min-height:0!important;padding-bottom:6px}}
+/* v42 check tile + tidy drops */
+.bjx-chk{display:flex;align-items:center;justify-content:center}
+.bjx-chk svg{width:76px;height:76px;filter:drop-shadow(0 4px 8px rgba(4,166,48,.25))}
+@media(max-width:767px){.bjx-chk svg{width:58px;height:58px}}
+@keyframes bjdrip{0%{translate:0 -14px;opacity:0}20%{opacity:1}80%{opacity:1}100%{translate:0 14px;opacity:0}}

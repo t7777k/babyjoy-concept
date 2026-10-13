@@ -79,3 +79,8 @@ Internal file – not linked from the site.
 - 125 ml icon: 22 drops (was 9) with a gentle staggered falling animation; motion is off under prefers-reduced-motion.
 - Mobile (<992px): the "BabyJoy up to the challenge" slogan now sits in the header above the video; the video is unobstructed. Desktop is unchanged (slogan overlays the top of the video, as on staging).
 - Shop band: EN "Shop now / Available at these retailers"; AR «تسوقي الآن / متوفر لدى هذه المتاجر». Retailer tiles are in alphabetical order per language (EN: Al-Dawaa, Amazon.sa, FirstCry, Mumzworld, Nahdi, noon; AR by Arabic name: أمازون، الدواء، النهدي، فيرست كراي، ممزورلد، نون); the FAQ answer and meta description lists use the same order.
+
+## 13 Oct, 23:15
+- Test tile 3: eye icon replaced by a bold white check in a solid BabyJoy-green (#04A630) circle; label "See the result" / «شاهدي النتيجة».
+- 125 ml drops: tidy 3-column cluster (12 drops) falling in sequence; reduced-motion respected.
+- Self-link audit: no product page has a button linking to itself (checked all 9 AR + 9 EN product pages, generated and live). Only remaining same-page links are the normal nav/footer items for the current page (About, Contact, Privacy, Terms, Products, Parent guide).
