@@ -379,3 +379,11 @@
 .rv-sums{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding-bottom:4px;scrollbar-width:none}.rv-sum{flex:0 0 auto;font-size:1.15rem}
 .rv-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;padding:0 0 1.2rem;scrollbar-width:none;margin-inline:-12px;padding-inline:12px}
 .rv-card{flex:0 0 78%;scroll-snap-align:center;padding:1.6rem;border-radius:2rem}.rv-card blockquote{font-size:1.45rem}}
+/* v35 review tabs */
+.rv-tabs{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:.4rem;background:#F3F3F1;border:1px solid #e2e4dc;border-radius:5rem;padding:.5rem;margin:0 auto 1.4rem}
+.rv-tabs button{border:0;background:transparent;color:#2F4033;font:inherit;font-weight:800;font-size:1.45rem;padding:.7rem 1.8rem;border-radius:5rem;cursor:pointer;transition:all .3s}
+.rv-tabs button[aria-selected=true]{background:#64734F;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.rv-avg{text-align:center;margin:0 0 1.6rem;color:#666;font-size:1.3rem}.rv-avg b{font-size:2rem;color:#2F4033;margin-inline-end:.3rem}
+.rv-who{color:#888;font-size:1.2rem}
+.rv-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+@media (max-width:767px){.rv-tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;max-width:100%}.rv-tabs button{flex:0 0 auto;font-size:1.25rem;padding:.6rem 1.2rem}}
