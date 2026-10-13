@@ -91,7 +91,7 @@ select.mt-field{appearance:auto}
 .en-intro p{color:#0f1577;font-weight:600;font-size:clamp(17px,2vw,24px);line-height:1.35;margin:0}
 .mt-legal{max-width:860px;margin:0 auto;padding:clamp(110px,16vw,210px) 20px 80px;text-align:start}.mt-legal h1{color:#172a7b;font-weight:800;margin:20px 0;font-size:clamp(28px,5vw,48px)}.mt-legal .ph{background:#fff4d6;color:#6b4e00;border-radius:12px;padding:10px 14px;font-size:1.4rem}
 </style>
-<link rel="stylesheet" href="../assets/bj-extra.css?v=20">
+<link rel="stylesheet" href="../assets/bj-extra.css?v=21">
 </head>
 
 <body class="home wp-singular page-template page-template-templates page-template-home-2025 page-template-templateshome-2025-php page page-id-185 wp-custom-logo wp-theme-babyjoy no-sidebar">
@@ -198,8 +198,13 @@ hideDiv.addEventListener('click', function () {
 <div class="concept-note" role="note">Concept prototype</div>
 <script id="bjx-js">
 (function(){var st8=false;var D={"olive": {"tape": [["1", "0–4", "premium-1.webp", 0, 4], ["2", "3.5–7", "premium-2.webp", 3.5, 7], ["3", "6–12", "premium-3.webp", 6, 12], ["4", "10–18", "premium-4.webp", 10, 18], ["5", "14–23", "premium-5.webp", 14, 23], ["6", "16–25", "premium-6.webp", 16, 25]], "pants": [["3", "6–12", "premium-pants-3.jpg", 6, 12], ["4", "9–14", "premium-pants-4.jpg", 9, 14], ["5", "12–18", "premium-pants-5.jpg", 12, 18], ["6", "16–23", "premium-pants-6.jpg", 16, 23]]}, "s8": {"tape": [], "pants": [["8", "20+", "../../../../assets/img/size8-1.jpg", 20, 30]]}, "comp": {"tape": [["1", "0–4", "tape-1.jpg", 0, 4], ["2", "3.5–7", "tape-2.jpg", 3.5, 7], ["3", "6–12", "tape-3.jpg", 6, 12], ["4", "10–18", "tape-4-1.jpg", 10, 18], ["4+", "12–21", "tape-4.jpg", 12, 21], ["5", "14–23", "tape-5.jpg", 14, 23], ["6", "16–25", "tape-6.jpg", 16, 25], ["7", "18+", "tape-7.jpg", 18, 30]], "pants": [["3", "6–12", "baby-pants-3.webp", 6, 12], ["4", "TBC", "baby-pants-4.webp", null, null], ["5", "12–18", "baby-pants-5.webp", 12, 18], ["6", "16–23", "baby-pants-6.webp", 16, 23]]}};var T={"kg": "kg", "olive": "Premium Olive", "comp": "BabyJoy Compressed", "tape": "Tape diapers", "pants": "Pants / Culotte", "none": "No matching size for this weight.", "also": "Also fits", "ind": "indicative", "s8": "BabyJoy Super Big"};
-var sg=document.querySelector('.bjx-sg');if(sg){var p=sg.dataset.p,st={coll:'olive',type:'tape'},w=document.getElementById('sg-w'),o=document.getElementById('sg-o');
-function upd(){var v=parseFloat(w.value),list=D[st.coll][st.type];var pct=(v-w.min)/(w.max-w.min)*100;w.style.setProperty('--pct',pct+'%');o.innerHTML=v+'<small>'+T.kg+'</small>';w.setAttribute('aria-valuetext',v+' '+T.kg);
+var sg=document.querySelector('.bjx-sg');if(sg){var p=sg.dataset.p,st={coll:'olive',type:'tape',mode:'weight',size:null},w=document.getElementById('sg-w'),o=document.getElementById('sg-o');
+function updSize(){var list=D[st.coll][st.type].concat(D.s8.pants);var sel=list.filter(function(s){return s[0]==st.size})[0]||list[Math.min(2,list.length-1)];st.size=sel[0];
+document.getElementById('sg-sizes').innerHTML=list.map(function(s){return '<button type="button" aria-pressed="'+(s===sel)+'" data-s="'+s[0]+'">'+s[0]+'</button>'}).join('');
+var s8=sel===D.s8.pants[0];var name=s8?T.s8+' · '+T.pants:(st.coll=='olive'?T.olive:T.comp)+' · '+(st.type=='tape'?T.tape:T.pants);document.getElementById('sg-n').textContent=name;
+document.getElementById('sg-s').textContent=sel[0];document.getElementById('sg-k').innerHTML=sel[3]===null?'':'<bdi dir="ltr">'+sel[1]+'</bdi> '+T.kg;var im=document.getElementById('sg-img');im.src=p+'wp-content/uploads/2026/06/'+sel[2];im.alt=name+' – '+sel[0];document.getElementById('sg-a').textContent='';}
+document.getElementById('sg-sizes').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;st.size=b.dataset.s;updSize()});
+function upd(){sg.dataset.mode=st.mode;if(st.mode=='size'){return updSize()}var v=parseFloat(w.value),list=D[st.coll][st.type];var pct=(v-w.min)/(w.max-w.min)*100;w.style.setProperty('--pct',pct+'%');o.innerHTML=v+'<small>'+T.kg+'</small>';w.setAttribute('aria-valuetext',v+' '+T.kg);
 var hits=list.filter(function(s){return s[3]!==null&&v>=s[3]&&v<=s[4]});var best=hits.length?hits[0]:null;
 // prefer the size where weight is not near top of range
 if(hits.length>1){best=hits.find(function(s){return v<=s[4]-1.5})||hits[hits.length-1];}
