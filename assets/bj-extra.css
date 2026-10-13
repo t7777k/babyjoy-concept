@@ -390,3 +390,7 @@
 @media (min-width:768px){.rv-grid{grid-template-columns:repeat(3,1fr)}.rv-grid .rv-card:nth-child(n+4){display:none}}
 @media (max-width:767px){.rv-tabs{display:inline-flex;overflow:visible;gap:.2rem;padding:.35rem}.rv-tabs button{font-size:1.12rem;padding:.55rem .85rem}}
 .rv-tr{font-size:1.05rem;color:#9a9a9a;font-style:italic;margin-top:-.4rem}
+/* v38 copy pass */
+#size-guide .bjx-sg>div:first-child>.bjx-seg[data-k=coll],#size-guide .bjx-sg>div:first-child>.bjx-seg[data-k=type]{grid-column:1/-1}
+.bjx-vcap{font-size:1.25rem;color:#777;margin:0 auto 1.2rem;max-width:640px;line-height:1.5}
+.mt-lang{text-transform:none!important}.mt-lang li a{width:auto!important;min-width:4rem;padding:0 1.2rem;border-radius:5rem!important;white-space:nowrap}
