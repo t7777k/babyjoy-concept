@@ -259,3 +259,11 @@
 #sg-sizes button{min-width:5rem;height:5rem;border-radius:5rem;border:2px solid rgba(255,255,255,.5);background:rgba(255,255,255,.12);color:#fff;font:inherit;font-weight:800;font-size:1.8rem;cursor:pointer;transition:all .25s}
 #sg-sizes button[aria-pressed=true]{background:#fff;color:#172a7b;border-color:#fff}
 @media (max-width:767px){.bjx-mode{margin-bottom:1rem}#sg-sizes{gap:.6rem;margin:1rem 0}#sg-sizes button{min-width:4.2rem;height:4.2rem;font-size:1.5rem}}
+/* v22 centered pack cards */
+.s8-pack{width:min(380px,80%);max-width:none!important;aspect-ratio:1/1;background:#fff;border:6px solid #fff;border-radius:3rem;box-shadow:0 30px 50px rgba(0,0,0,.3);padding:8%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;transform:rotate(-3deg);transform-origin:50% 50%;transition:transform .5s}
+.s8-pack:hover{transform:rotate(0) scale(1.02)}
+.s8-pack img,.s8-pack img:hover{width:100%;height:100%;object-fit:contain;object-position:center;border:0;border-radius:0;box-shadow:none;transform:none;display:block}
+.bjx-res .pk img:hover{transform:scale(1.04)}
+.bjx-pp .pk{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;box-sizing:border-box}
+.bjx-pp .pk img{width:100%;height:100%;max-height:none;object-fit:contain;object-position:center}
+@media (max-width:767px){.s8-pack{width:min(240px,66%);padding:7%}}
