@@ -7,7 +7,7 @@ Internal file – not linked from the site.
 - Units: space before the unit (8 kg / 8 كغ / 125 ml / 125 مل); automatic check added.
 - "Culotte" and "(سروال)" removed; formats are Tape diapers / Pants · حفاض بلاصق / كلوت.
 - Language switch shows "English" / "العربية" (pill instead of code circle).
-- Arabic footer translated: © 2026 بيبي جوي العربية. جميع الحقوق محفوظة. (EN: © 2026 BabyJoy Arabia. All rights reserved.)
+- Arabic footer translated: © 2026 بيبي جوي العربية. جميع الحقوق محفوظة. (EN: © 2026 BabyJoy Arabia. All rights reserved.); "أين أشتري" → «أين تشترين؟».
 - ASIN rows removed from all wipes pages.
 
 ## Product naming (section 3) – titles, h1, breadcrumbs, spec boxes, buttons, alt text, band tabs, size-guide picker/result, review tags, products page
