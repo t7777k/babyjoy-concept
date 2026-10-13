@@ -451,3 +451,8 @@ html:not([lang^=ar]) .bjx-mm-p{right:0;transform:translateX(100%)}
 .bjx-chk svg{width:76px;height:76px;filter:drop-shadow(0 4px 8px rgba(4,166,48,.25))}
 @media(max-width:767px){.bjx-chk svg{width:58px;height:58px}}
 @keyframes bjdrip{0%{translate:0 -14px;opacity:0}20%{opacity:1}80%{opacity:1}100%{translate:0 14px;opacity:0}}
+/* v43 no band CTAs; pack card is the link */
+a.s8-pack{display:block;width:fit-content;margin:2rem auto 0!important;text-decoration:none;cursor:pointer;transition:transform .25s,box-shadow .25s}
+a.s8-pack:hover,a.s8-pack:focus-visible{transform:translateY(-4px)}
+a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:767px){a.s8-pack{margin-top:1.4rem!important}}

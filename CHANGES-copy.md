@@ -84,3 +84,6 @@ Internal file – not linked from the site.
 - Test tile 3: eye icon replaced by a bold white check in a solid BabyJoy-green (#04A630) circle; label "See the result" / «شاهدي النتيجة».
 - 125 ml drops: tidy 3-column cluster (12 drops) falling in sequence; reduced-motion respected.
 - Self-link audit: no product page has a button linking to itself (checked all 9 AR + 9 EN product pages, generated and live). Only remaining same-page links are the normal nav/footer items for the current page (About, Contact, Privacy, Terms, Products, Parent guide).
+
+## 13 Oct, 23:45
+- Homepage product bands: all "Shop BabyJoy …" / «تسوقي …» buttons removed (Premium Olive, Compressed, Size 8, Wipes, every tab). The pack card is now the link to the matching product page (hover lift kept, keyboard focus ring); icons flow straight into the pack.
