@@ -477,7 +477,7 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 @media(min-width:768px){.bjx-ff{padding:2rem 1.6rem}}
 .bjx-beaker{display:flex;justify-content:center;padding-top:4px}.bjx-beaker svg{width:46px}@media(min-width:768px){.bjx-beaker svg{width:64px}}
 .bjx-ff .bjx-fml small{transition:color .5s ease 2.2s}.bjx-ff:not(.go) .bjx-fill .wv{display:none}
-/* v46 WIN block */
+/* v46 comparison block */
 .bjx-cmp{margin:3.6rem auto 0;max-width:920px;text-align:center}
 .bjx-cmp-h{font-size:clamp(2.8rem,4.6vw,5rem);line-height:1.1;font-weight:800;color:var(--navy,#172A7B);margin:0 0 2.4rem;letter-spacing:-.01em}
 .bjx-cmp-h em{font-style:normal;color:#04A630;display:inline-block}
