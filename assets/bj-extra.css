@@ -556,3 +556,10 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 :root{--bgap:80px}@media(max-width:767px){:root{--bgap:44px}}
 #shop,#size-guide,#olive,#compressed,#size8,#wipes,#reviews{padding:calc(var(--wh) + 1.2rem) 0 calc(var(--wh) + 1.2rem)!important}
 @media(max-width:767px){#shop,#size-guide,#olive,#compressed,#size8,#wipes,#reviews{padding:calc(var(--wh) + .8rem) 0 calc(var(--wh) + 1rem)!important}}
+/* v56 45° tile: line-art mother cradling baby; baby rotates from flat to 45° around the hip pivot */
+.bjx-mom svg{width:78px;height:auto}
+@media(min-width:768px){.bjx-mom svg{width:104px}}
+.bjx-mom .bar{transform-origin:42px 60px}
+.bjx-mom{padding-top:8px}.bjx-mom svg{width:70px;overflow:visible}@media(min-width:768px){.bjx-mom svg{width:96px}}
+@media(max-width:767px){.bjx-mom{padding-top:2px}.bjx-mom svg{width:62px}.bjx-fact:first-child .bjx-f45{font-size:3.8rem!important}}
+@media(max-width:767px){.bjx-fact:first-child .bjx-ficon{height:auto!important;min-height:78px;gap:0!important}.bjx-mom svg{width:58px}}
