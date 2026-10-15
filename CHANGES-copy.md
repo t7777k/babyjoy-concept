@@ -96,3 +96,8 @@ Internal file – not linked from the site.
 - 14 Oct: band system v54. Each coloured band (Shop, Size guide, Premium Olive, Compressed, Size 8, Wipes, Reviews, the last now with a light sage tint) is a separate shape with the same wave on its top and a mirrored wave on its bottom (36px mobile / 72px desktop), alternating A/B, with a constant white gap of 44px mobile / 80px desktop. No overlaps. Internal padding tightened. Page height AR: 390 6276 → 6634, 1280 9624 → 10336.
 - 14 Oct: no "wins"/«يفوز» anywhere. Ribbon is now "Best for your baby" / «أفضل لطفلك»; internal class names renamed (bjx-win → bjx-cmp). Whole-site grep for يفوز/تفوز/win/wins/winner: none left.
 - 14 Oct: the 45° tile now shows a simple navy line-art mother cradling a baby (no real person). The baby rotates from flat to 45° around a green hip pivot, the green arc sweeps and the number counts 0 to 45 (same stagger; reduced motion = final state). Source: the video frames were checked and not used (the mother holds the baby upright on her hip in a store, with no 45° pose, and a real person is unreadable at tile size).
+
+## v58 — Compare section + Shop Now picker removed (2026-10-15)
+- The user asked for both to be undone. Commit 25177de was reverted with git revert (96a669e). This removed #compare, the drawer, the picker on the homepage, product pages and wipes pages, and the v57 CSS, bj-shop.js and bj-vars.js.
+- The generator was restored to the pre-change version (bj_add.pre-shop.py). The picker version is kept as /workspace/bj_add.with-shop.py, and the data stays in /workspace/shopdata/ for possible reuse.
+- Restored: the old sage Shop Now logo tiles and the old product-page "Where to buy". The 45° mom tile is kept. Cache-buster bumped to v=58.
