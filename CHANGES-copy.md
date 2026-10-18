@@ -143,3 +143,7 @@ Internal file – not linked from the site.
 - Mobile: all three items stay in one compact row (badges 32 px, logo 46 px), with the burger on the right. Language and social are in the burger menu.
 - Header container centring fixed. It sat flush left on wide screens.
 - The header X icon is a white disc instead of a blank one.
+
+## v64 — tighter band gaps (2026-10-18)
+- White gaps between product sections cut from 96 px to 44 px on desktop and from 56 px to 26 px on mobile. Each band keeps its rounded shape, so they are still clearly separate.
+- The space above the footer matches the band gap: 44 px desktop, 26 px mobile.

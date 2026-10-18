@@ -712,3 +712,5 @@ html[dir=rtl] .bjx-hrow>.bjx-nav{direction:rtl}
 @media(min-width:992px) and (max-width:1599px){.bjx-hrow>.col-10{visibility:hidden}}
 @media(min-width:1440px){.mt-header .container-xl{max-width:1640px!important}.bjx-hrow>.col-10{visibility:visible}.bjx-hrow .mt-social img{width:22px!important;height:22px!important}.bjx-hrow .mt-social li{margin:0 1px!important}}
 @media(min-width:992px) and (max-width:1439px){.bjx-hrow>.col-10{visibility:hidden}}
+/* v64 — tighter white gaps between product bands */
+:root{--bgap:44px}@media(max-width:767px){:root{--bgap:26px}}.mt-footer{margin-top:12px}
