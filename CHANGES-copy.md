@@ -134,3 +134,12 @@ Internal file – not linked from the site.
 - Menu items unchanged. Text is now bold navy (#282E78, about 6:1 contrast on the green). Hover/focus shows a white pill; the active item shows a navy pill. Active means the current page, or on the homepage the section in view (scroll-spy).
 - Header social icons are white. The language pill and burger are navy with a white border.
 - The "BabyJoy Up to the Challenge" heading at the top of the 45° section is bigger and bolder: AR SVG up to 104 px tall, EN up to 6.6rem at weight 900. It stays a separate panel below the header.
+
+## v63 — badge row in header: Japan Technology · logo · Saudi Made (2026-10-18)
+- The header's top row is now three items on fixed physical sides, the same in AR and EN. Japan Technology badge on the left, the official BabyJoy logo in the centre, the Saudi Made mark on the right.
+- Japan Technology uses official brand icons from OneDrive: UGHI Work/babyjoyonline/Brand Assets/Icons (WeTransfer 2026-10-18)/png@72/icon_Tape&Pants-27.png (EN "JAPAN TECHNOLOGY") and icon_Tape&Pants-28.png (AR «اليابان تكنولوجيا»). They are trimmed and saved as assets/brand/badge-japan-tech-{en,ar}.webp.
+- Saudi Made: there is no file for it in OneDrive Brand Assets. This uses the official Saudi Made programme logo (saudimade.sa) already on the staging store, /workspace/bj/public/img/icon-saudi-made.png (commit 7ce4721). It is saved as assets/brand/badge-saudi-made.webp on a white plate. Alt text: "Saudi Made" / «صنع في السعودية».
+- Desktop: the menu now has its own row below the badges, separated by a white rule. Items unchanged, 1.75rem bold navy. Social icons show at 1440 px and wider; the language pill is on the right.
+- Mobile: all three items stay in one compact row (badges 32 px, logo 46 px), with the burger on the right. Language and social are in the burger menu.
+- Header container centring fixed. It sat flush left on wide screens.
+- The header X icon is a white disc instead of a blank one.
