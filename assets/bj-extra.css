@@ -714,3 +714,37 @@ html[dir=rtl] .bjx-hrow>.bjx-nav{direction:rtl}
 @media(min-width:992px) and (max-width:1439px){.bjx-hrow>.col-10{visibility:hidden}}
 /* v64 — tighter white gaps between product bands */
 :root{--bgap:44px}@media(max-width:767px){:root{--bgap:26px}}.mt-footer{margin-top:12px}
+/* v65 — header: both badges are equal 2:1 white plates; mobile = one row of symmetric slots so the logo is exactly centred
+   EN: burger | Japan · logo · Saudi | lang      AR: lang | Japan · logo · Saudi | burger  (badges keep physical sides) */
+.bjx-hb-sa img{background:none!important;padding:0!important;border-radius:12px}
+.bjx-hb-jp img,.bjx-hb-sa img{aspect-ratio:2/1;object-fit:contain}
+.bjx-hlang{display:none}
+@media(min-width:992px){.bjx-hb-jp img,.bjx-hb-sa img{height:58px!important;width:116px!important}}
+@media(min-width:992px) and (max-width:1365px){.bjx-hb-jp img,.bjx-hb-sa img{height:52px!important;width:104px!important}}
+@media(max-width:991px){
+ .mt-header .container-xl>.bjx-hrow{grid-template-columns:40px minmax(0,1fr) 40px!important;grid-template-areas:"menu top lang"!important;column-gap:6px!important}
+ html[dir=rtl] .mt-header .container-xl>.bjx-hrow{grid-template-areas:"lang top menu"!important}
+ .bjx-hrow>.col-2{grid-area:menu!important;justify-content:center!important}
+ .bjx-hrow>.bjx-hlang{grid-area:lang;display:inline-flex;align-items:center;justify-content:center;justify-self:center;width:40px;height:40px;border-radius:999px;background:#fff;color:#282E78!important;font-weight:900;font-size:1.4rem;line-height:1;text-decoration:none;border:2px solid #282E78;box-shadow:0 2px 6px rgba(40,46,120,.18)}
+ .bjx-hrow>.bjx-hlang[lang=ar]{font-size:1.9rem;padding-bottom:3px}
+ .bjx-hrow>.bjx-hlang:hover,.bjx-hrow>.bjx-hlang:focus-visible{background:#282E78;color:#fff!important;outline:none}
+ .bjx-hrow>.bjx-hbadges{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;gap:4px!important}
+ .bjx-hb-jp,.bjx-hb-sa{justify-content:center!important}
+ .bjx-hb-jp img,.bjx-hb-sa img{height:30px!important;width:60px!important;border-radius:6px!important}
+ .bjx-hbadges .bjx-hlogo img{height:44px!important}
+}
+@media(max-width:374px){.bjx-hb-jp img,.bjx-hb-sa img{height:26px!important;width:52px!important}.bjx-hbadges .bjx-hlogo img{height:38px!important}.bjx-hrow>.bjx-hlang,.bjx-burger{width:36px!important;height:36px!important}.mt-header .container-xl>.bjx-hrow{grid-template-columns:36px minmax(0,1fr) 36px!important}}
+/* v65 — Premium Olive: official sub-brand heart + Olive mark */
+.bjx-sublogo{display:flex!important;flex-direction:column;align-items:center}
+.bjx-sublogo .bj-badge-o{width:100%;height:auto}
+.bjx-olmark{display:inline-block;background:#fff;border-radius:18px;padding:8px 18px;margin-top:-6px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.bjx-olmark img{display:block;height:64px;width:auto}
+@media(max-width:767px){.bjx-olmark{padding:6px 14px;border-radius:14px}.bjx-olmark img{height:48px}}
+.bjx-pp-sub{display:flex;align-items:center;gap:16px;margin-bottom:1.2rem}
+.bjx-pp-sub img{height:120px;width:auto;filter:drop-shadow(0 6px 12px rgba(0,0,0,.12))}
+.bjx-pp-sub .bjx-pp-olm{height:72px;filter:none}
+@media(max-width:767px){.bjx-pp-sub{justify-content:center}.bjx-pp-sub img{height:96px}.bjx-pp-sub .bjx-pp-olm{height:56px}}
+@media(max-width:991px){.bjx-hrow>.bjx-hlang{width:40px!important;height:40px!important;min-width:40px;padding:0!important;margin:0!important;box-sizing:border-box}}@media(max-width:374px){.bjx-hrow>.bjx-hlang{width:36px!important;height:36px!important;min-width:36px}}
+@media(max-width:767px){.bjx-olmark img{height:60px}}
+@media(min-width:768px){.bjx-olmark img{height:84px}.bjx-olmark{padding:10px 22px}}
+.wp-tabs{display:flex!important;width:fit-content!important;max-width:100%;margin-left:auto!important;margin-right:auto!important}

@@ -147,3 +147,11 @@ Internal file – not linked from the site.
 ## v64 — tighter band gaps (2026-10-18)
 - White gaps between product sections cut from 96 px to 44 px on desktop and from 56 px to 26 px on mobile. Each band keeps its rounded shape, so they are still clearly separate.
 - The space above the footer matches the band gap: 44 px desktop, 26 px mobile.
+
+## v65 — mobile header centring, language switch, official Premium Olive logo (2026-10-18)
+- Mobile header is one row of symmetric slots. EN: burger · Japan Technology · logo · Saudi Made · language. AR: language · Japan Technology · logo · Saudi Made · burger. The badges keep their physical sides. Measured logo offset from the viewport centre: 0 px at 360, 390, 430, 768, 1024, 1280 and 1440, in AR and EN.
+- Both badges are now equal 2:1 white plates: 60×30 px on mobile, 104×52 to 116×58 on desktop. They sit the same distance either side of the logo. The Saudi Made mark is placed on a plate that matches the Japan badge (assets/brand/badge-saudi-made-plate.webp).
+- New language switch on mobile: a round pill reading "EN" on AR pages and «ع» on EN pages, on the opposite side to the burger. It links to the same page in the other language. Desktop keeps the "English"/«العربية» pill at the end of the menu row.
+- Premium Olive homepage section: the heading heart is now the official BabyJoy "premium" sub-brand heart with the official Olive mark below it on a white chip. AR uses the AR mark, EN the EN mark. Sources: OneDrive UGHI Work/babyjoyonline/Brand Assets/Brand&SubBrand/Brands@150/brand&sub_tape_compressed&olive-01.png (premium heart), -02.png (Olive EN), -03.png (Olive AR).
+- Premium Olive product pages: the official pack lock-up and Olive mark now appear above the H1. Tape uses -06 (EN) / -07 (AR); Pants uses -17 (EN) / -18 (AR), matching the Olive Compressed Pants pack.
+- Fixed product-type tabs (Tape/Pants), which were stuck to one side; they are now centred.
