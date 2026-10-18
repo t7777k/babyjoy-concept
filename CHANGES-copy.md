@@ -127,3 +127,10 @@ Internal file – not linked from the site.
 - Earlier quotes of both subline versions in this log were replaced with "[subline text removed]".
 - None of the wording was used in meta, og or twitter tags, so no meta changes were needed.
 - Spacing: the heading now leads straight into the body line, with a 1.6rem gap.
+
+## v62 — stronger branded header (2026-10-18)
+- Header bar now uses BabyJoy green (#94C83D, sampled from the official heart logo) with a navy shadow. It is taller: 96 px desktop, 76 px mobile.
+- Official wordmark logo is bigger: 68 px desktop (60 px between 992 and 1365 px), 52 px mobile. Its built-in white outline keeps it legible on the green.
+- Menu items unchanged. Text is now bold navy (#282E78, about 6:1 contrast on the green). Hover/focus shows a white pill; the active item shows a navy pill. Active means the current page, or on the homepage the section in view (scroll-spy).
+- Header social icons are white. The language pill and burger are navy with a white border.
+- The "BabyJoy Up to the Challenge" heading at the top of the 45° section is bigger and bolder: AR SVG up to 104 px tall, EN up to 6.6rem at weight 900. It stays a separate panel below the header.

@@ -91,7 +91,7 @@ select.mt-field{appearance:auto}
 .en-intro p{color:#0f1577;font-weight:600;font-size:clamp(17px,2vw,24px);line-height:1.35;margin:0}
 .mt-legal{max-width:860px;margin:0 auto;padding:clamp(110px,16vw,210px) 20px 80px;text-align:start}.mt-legal h1{color:#172a7b;font-weight:800;margin:20px 0;font-size:clamp(28px,5vw,48px)}.mt-legal .ph{background:#fff4d6;color:#6b4e00;border-radius:12px;padding:10px 14px;font-size:1.4rem}
 </style>
-<link rel="stylesheet" href="../assets/bj-extra.css?v=61">
+<link rel="stylesheet" href="../assets/bj-extra.css?v=62">
 </head>
 
 <body class="home wp-singular page-template page-template-templates page-template-home-2025 page-template-templateshome-2025-php page page-id-185 wp-custom-logo wp-theme-babyjoy no-sidebar">
@@ -262,6 +262,7 @@ document.querySelectorAll('.bjx-sizes').forEach(function(g){g.addEventListener('
 document.getElementById('pp-w').innerHTML=b.dataset.w;var pkc=document.getElementById('pp-pk');if(pkc)pkc.textContent=b.dataset.pk||'';document.getElementById('pp-s').textContent=b.dataset.s;var im=document.getElementById('pp-img');im.src=b.dataset.img;im.alt=b.dataset.alt;})});
 function goPants(){if(location.hash=='#pants'){var b=document.querySelector('[data-t=olive-1]'),o=document.getElementById('olive');if(b&&o){b.click();o.scrollIntoView();}}}window.addEventListener('hashchange',goPants);window.addEventListener('load',goPants);
 })();</script>
+<script id="bjx-spy">(function(){var n=document.querySelector(".bjx-hrow .bjx-nav");if(!n)return;var L=[].slice.call(n.querySelectorAll("a"));var pg=location.pathname.split("/").pop()||"index.html";L.forEach(function(a){if(a.getAttribute("href")===pg){a.classList.add("is-active");a.setAttribute("aria-current","page")}});var S=L.filter(function(a){return a.hash&&a.getAttribute("href").charAt(0)==="#"}).map(function(a){return [a,document.querySelector(a.hash)]}).filter(function(x){return x[1]});if(!S.length)return;function u(){var y=innerHeight*0.35,cur=null;S.forEach(function(x){if(x[1].getBoundingClientRect().top<y)cur=x[0]});S.forEach(function(x){x[0].classList.toggle("is-active",x[0]===cur)})}addEventListener("scroll",u,{passive:true});u()})();</script>
 </body>
 </html>
 
