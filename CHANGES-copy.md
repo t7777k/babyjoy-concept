@@ -155,3 +155,9 @@ Internal file – not linked from the site.
 - Premium Olive homepage section: the heading heart is now the official BabyJoy "premium" sub-brand heart with the official Olive mark below it on a white chip. AR uses the AR mark, EN the EN mark. Sources: OneDrive UGHI Work/babyjoyonline/Brand Assets/Brand&SubBrand/Brands@150/brand&sub_tape_compressed&olive-01.png (premium heart), -02.png (Olive EN), -03.png (Olive AR).
 - Premium Olive product pages: the official pack lock-up and Olive mark now appear above the H1. Tape uses -06 (EN) / -07 (AR); Pants uses -17 (EN) / -18 (AR), matching the Olive Compressed Pants pack.
 - Fixed product-type tabs (Tape/Pants), which were stuck to one side; they are now centred.
+
+## v66 — Zero leakage key message
+- 45° headline: "One test... A clear difference." → "Zero leakage." / «صفر تسريب.» (navy heavy, green swoosh). Explainer line kept.
+- Comparison: heading → "45° leakage test: BabyJoy does not leak. Other diaper leaks." / «اختبار التسريب بزاوية 45°: بيبي جوي لا يسرّب. الحفاض الآخر يسرّب.»; BabyJoy pill "ZERO LEAKAGE" / «صفر تسريب» (navy, green check); other pill "LEAKS" / «تسريب» (red, X); ribbon removed.
+- Facts tile 3: removed subline "BabyJoy stopped the leak" / «بيبي جوي منع التسريب» (no repetition).
+- Homepage title/og:title: "– Zero Leakage" / «– صفر تسريب».
