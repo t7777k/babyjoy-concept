@@ -607,3 +607,36 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .bjx-slogrow>.bjx-hlogo{flex:none}.bjx-slogrow>.en-slogan,.bjx-slogrow>img{flex:0 1 auto;width:auto!important;min-width:0;margin:0!important}
 .bjx-slogrow>.en-slogan{text-align:end}
 .mt-sound{background:#172A7B!important;color:#fff!important}
+/* v60 — header as its own bar; slogan heads the 45° video section */
+.mt-header{position:sticky!important;top:0;background:#fff!important;border-bottom:1px solid #e6ebe1;box-shadow:0 4px 16px rgba(23,42,123,.06);padding:0!important;z-index:1000}
+.mt-header .container-xl>.bjx-hrow{display:flex!important;flex-wrap:nowrap!important;align-items:center;gap:20px;margin:0!important;min-height:76px;justify-content:space-between}
+.bjx-hrow>*{width:auto!important;max-width:none!important;flex:0 0 auto!important;padding:0!important;margin:0!important}
+.bjx-hrow .bjx-nav{flex:1 1 auto!important;display:flex;flex-wrap:nowrap;justify-content:center;gap:1.8rem;padding:0!important}
+.bjx-hrow .bjx-nav a{font-size:1.35rem;white-space:nowrap}
+.bjx-hrow .mt-section{padding:0!important;margin:0!important}
+.bjx-hrow .mt-social{margin:0!important;padding:0!important;gap:6px}
+.bjx-hrow .mt-social li{padding:0!important}
+.bjx-hrow .mt-social img{width:28px!important;height:28px!important}
+.bjx-hrow>.col-2{display:flex;align-items:center;gap:10px}
+.bjx-hrow .mt-lang{margin:0!important;padding:0!important;width:auto!important}
+.bjx-hrow .mt-lang li{padding:0!important;width:auto!important}
+.bjx-hrow .mt-lang li a{display:inline-flex!important;align-items:center;height:36px!important;line-height:36px!important;padding:0 1.6rem!important;width:auto!important;border-radius:999px!important;font-size:1.4rem}
+.bjx-hlogo img{display:block;height:46px!important;width:auto!important;max-width:none!important;margin:0!important}
+@media(max-width:1199px){.bjx-hrow .mt-social{display:none!important}.bjx-hrow .bjx-nav{gap:1.3rem}.bjx-hrow .bjx-nav a{font-size:1.25rem}}
+@media(max-width:991px){.mt-header .container-xl>.bjx-hrow{min-height:62px;gap:10px}.bjx-hlogo img{height:36px!important}
+ .bjx-hrow .mt-social{display:flex!important;justify-content:center!important}.bjx-hrow>.col-10{flex:1 1 auto!important;min-width:0}.bjx-hrow .mt-social img{width:24px!important;height:24px!important}.bjx-hrow .mt-social{gap:4px}}
+@media(max-width:360px){.bjx-hrow .mt-social{display:none!important}}
+/* 45° video section: own background, curve and gap */
+.mt-main_banner{margin-top:22px!important;background:linear-gradient(180deg,#F2F6EC,#E9EFE1);border-radius:36px 36px 0 0;padding:26px 0 0!important;overflow:hidden}
+.bjx-slogan-h{text-align:center;padding:0 16px 20px;line-height:1.1}
+.bjx-slogan-h img{display:inline-block;width:auto!important;max-width:min(560px,86vw)!important;height:auto;max-height:64px;margin:0!important}
+.bjx-slogan-h .en-slogan{display:inline-block!important;width:auto!important;font-size:clamp(2.4rem,3.6vw,4.2rem)!important;position:static!important;margin:0!important}
+.mt-main_banner video{display:block;border-radius:0}
+@media(max-width:767px){.mt-main_banner{margin-top:16px!important;border-radius:26px 26px 0 0;padding-top:18px!important}.bjx-slogan-h{padding-bottom:14px}.bjx-slogan-h img{max-height:40px}}
+@media(max-width:991px){.bjx-hrow .bjx-nav{display:none!important}}
+.mt-header .container-xl{padding-left:20px!important;padding-right:20px!important;max-width:1320px}
+@media(min-width:992px){.bjx-hrow{gap:14px!important}.bjx-hrow .bjx-nav{gap:1.4rem!important}.bjx-hrow .bjx-nav a{font-size:1.25rem!important}.bjx-hrow .mt-social img{width:24px!important;height:24px!important}.bjx-hrow .mt-social{gap:2px!important}.bjx-hrow .mt-social li a{padding:0 2px!important;margin:0!important}.bjx-hrow>.col-10{min-width:0}}
+@media(min-width:992px) and (max-width:1279px){.bjx-hrow .mt-social{display:none!important}}
+@media(max-width:991px){.bjx-hrow>.col-10{display:none!important}}
+.bjx-mm-social{margin-top:18px}.bjx-mm-soc{display:flex!important;flex-wrap:wrap;gap:10px;justify-content:flex-start;padding:0;margin:0;list-style:none}.bjx-mm-soc li{padding:0!important}.bjx-mm-soc img{width:34px;height:34px}
+@media(max-width:767px){.bjx-slogan-h .en-slogan{font-size:2.1rem!important}}

@@ -114,3 +114,10 @@ Internal file – not linked from the site.
 5. Comparison stills: the cards are now equal width and height with equal borders. The other-diaper card has a red border, a red X badge, a red box around the leak puddle and a red caption bar. The BabyJoy card keeps its green check and the "Best for your baby" ribbon.
 6. The Shop now eyebrow is now a large sage pill (2.2rem desktop, 1.8rem mobile).
 7. Band white gap increased (desktop 96 px, mobile 56 px); footer spacing added.
+
+## v60 — subline + header bar (2026-10-18)
+- 45° subline under "One test... A clear difference.": EN "All-around leak protection, all the time, in any position." / AR «حماية من التسريب من كل الجهات، طوال الوقت وبأي وضعية.» This is Tayyam's wording and is pending claims approval (see VERIFY.md).
+- Header is now its own sticky white bar with a bottom border and soft shadow, 76 px desktop / 62 px mobile. Layout: desktop logo · menu (items unchanged) · social · compact language pill; mobile logo · burger.
+  - Social icons are hidden at 992–1279 px. On mobile they moved into the burger menu.
+  - The language button is now a compact pill (previously a full-width orange bar on desktop).
+- The slogan left the header. On the homepage it heads the 45° video section, which has its own sage background, a rounded top and a 16–22 px gap below the header; it never overlays the video. Inner pages no longer show the slogan.
