@@ -101,3 +101,16 @@ Internal file – not linked from the site.
 - The user asked for both to be undone. Commit 25177de was reverted with git revert (96a669e). This removed #compare, the drawer, the picker on the homepage, product pages and wipes pages, and the v57 CSS, bj-shop.js and bj-vars.js.
 - The generator was restored to the pre-change version (bj_add.pre-shop.py). The picker version is kept as /workspace/bj_add.with-shop.py, and the data stays in /workspace/shopdata/ for possible reuse.
 - Restored: the old sage Shop Now logo tiles and the old product-page "Where to buy". The 45° mom tile is kept. Cache-buster bumped to v=58.
+
+## v59 — Tayyam feedback round (2026-10-18)
+1. Logos: all BabyJoy logos now use the official files from OneDrive `UGHI Work/babyjoyonline/Brand Assets/Logos/`: BabyJoy-logo-EN.png, BabyJoy-logo-AR.png, BabyJoy-logo-heart-EN.png, BabyJoy-logo-heart-AR.png. They were trimmed, resized and saved as WebP in assets/brand/. AR pages use the Arabic logo and EN pages the English one.
+   - Heart logo: the hero badge and the band badges (Premium Olive / Compressed / Super Big Pants / Wet Wipes). It replaces the traced heart plus the old staging logo PNG. The sub-brand label now sits under the heart.
+   - Wordmark: new in the header, mobile menu and footer. Also used on the comparison card and the legal pages (it replaces babyjoy-logo-2x*.png).
+   - Favicon: made from the official heart logo (32/192/180 px).
+   - Retailer logos: no official retailer files exist in that OneDrive folder (only BabyJoy brand, sub-brand and icon assets), so they are unchanged.
+2. Video sound: test45.mp4 had no audio track. It was re-cut from the staging babyjoy-video-banner.mp4 (7.0–20.0 s, frame-matched; that file has AAC audio). Autoplay stays muted, and there is now a visible "Sound on / Sound off" («تشغيل الصوت / كتم الصوت») pill on the video, with aria-pressed.
+3. The header is now in normal flow at all widths (logo + slogan row), so "BabyJoy Up to the Challenge" never sits on the video.
+4. Gap above the video: 24 px on mobile, up to 48 px on desktop.
+5. Comparison stills: the cards are now equal width and height with equal borders. The other-diaper card has a red border, a red X badge, a red box around the leak puddle and a red caption bar. The BabyJoy card keeps its green check and the "Best for your baby" ribbon.
+6. The Shop now eyebrow is now a large sage pill (2.2rem desktop, 1.8rem mobile).
+7. Band white gap increased (desktop 96 px, mobile 56 px); footer spacing added.

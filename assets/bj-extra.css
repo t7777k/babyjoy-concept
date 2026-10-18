@@ -563,3 +563,47 @@ a.s8-pack:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .bjx-mom{padding-top:8px}.bjx-mom svg{width:70px;overflow:visible}@media(min-width:768px){.bjx-mom svg{width:96px}}
 @media(max-width:767px){.bjx-mom{padding-top:2px}.bjx-mom svg{width:62px}.bjx-fact:first-child .bjx-f45{font-size:3.8rem!important}}
 @media(max-width:767px){.bjx-fact:first-child .bjx-ficon{height:auto!important;min-height:78px;gap:0!important}.bjx-mom svg{width:58px}}
+/* v59 — official logos, header spacing, sound toggle, equal comparison stills + red marker, bigger Shop now, band gaps */
+.bj-badge{aspect-ratio:auto;width:min(300px,64vw)}
+.bj-badge-o{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 20px rgba(0,0,0,.18))}
+.bj-badge-s{position:static;display:block;transform:rotate(-3deg);margin-top:-.6rem;text-align:center}
+.hero-badge{width:min(240px,56vw)}
+@media(max-width:767px){.bj-badge{width:min(220px,58vw)}.hero-badge{width:min(200px,50vw)}}
+/* header: logo + slogan row, always above (never over) the video */
+.mt-header{position:relative!important;height:auto!important;min-height:0!important;background:#fff;z-index:5}
+.bjx-slogrow{align-items:center;justify-content:space-between!important;gap:1.2rem;padding:8px 0 4px}
+.bjx-hlogo img{display:block;height:54px;width:auto}
+.mt-slogan img.attachment-full{margin:0!important;max-height:46px;width:auto;max-width:62%}
+.mt-main_banner{margin-top:clamp(24px,3.4vw,48px)!important}
+@media(max-width:767px){.bjx-hlogo img{height:40px}.mt-slogan img.attachment-full{max-height:30px;max-width:58%}}
+.bjx-mm-logo img{display:block;height:38px;width:auto}.bjx-mm-top{align-items:center}
+.bjx-flogo img{display:block;height:48px;width:auto;margin:0 auto 1rem}
+/* sound toggle */
+.mt-sound{top:auto!important;bottom:16px!important;width:auto!important;height:auto!important;display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.92)!important;border-radius:999px!important;padding:.6rem 1.2rem .6rem .7rem!important;box-shadow:0 4px 14px rgba(0,0,0,.18);font:inherit;font-weight:700;font-size:1.4rem;color:#172A7B;cursor:pointer}
+.mt-sound img{width:26px;height:26px}
+.mt-sound.mute img{content:url('../wp-content/uploads/2024/11/unmute-plain.png')!important}
+/* comparison: equal stills, red marker on the other diaper */
+.bjx-cmp-grid{grid-template-columns:1fr 1fr!important;align-items:stretch!important}
+.bjx-cmp figure{display:flex;flex-direction:column}
+.bjx-cmp-bj,.bjx-cmp-ot{border-width:4px!important;border-style:solid}
+.bjx-cmp-ot{border-color:#E0262E!important;filter:none!important;opacity:1!important;box-shadow:0 14px 30px rgba(224,38,46,.2)}
+.bjx-cmp-pw{position:relative}
+.bjx-cmp-ot .bjx-cmp-ph{filter:grayscale(.3)}
+.bjx-cmp figcaption{flex:1;justify-content:center}
+.bjx-cmp-ot figcaption{background:#C81F27!important}
+.bjx-cmp-box{position:absolute;left:22%;right:12%;top:84%;height:14%;border:3px solid #E0262E;border-radius:10px;box-shadow:0 0 0 3px rgba(255,255,255,.75)}
+.bjx-cmp-x{position:absolute;top:12px;inset-inline-end:12px;width:56px;height:56px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.25))}
+.bjx-cmp-x svg{display:block;width:100%;height:100%}
+.bjx-cmp-ot .bjx-cmp-tag{font-size:2.4rem!important}.bjx-cmp-ot .bjx-cmp-tag svg{width:42px!important;height:42px!important}
+.bjx-cmp-ot .bjx-cmp-name{font-size:1.8rem}.bjx-cmp-bj .bjx-cmp-logo{height:34px}
+@media(max-width:767px){.bjx-cmp-x{width:40px;height:40px;top:8px;inset-inline-end:8px}.bjx-cmp-ot .bjx-cmp-tag,.bjx-cmp-bj .bjx-cmp-tag{font-size:1.7rem!important}.bjx-cmp-tag svg,.bjx-cmp-ot .bjx-cmp-tag svg{width:28px!important;height:28px!important}.bjx-cmp-ot .bjx-cmp-name{font-size:1.4rem}.bjx-cmp-bj .bjx-cmp-logo{height:26px}.bjx-cmp-rib{font-size:1.15rem!important;padding:.45rem .8rem!important;top:8px!important;inset-inline-start:8px!important}}
+.bjx-cmp:not(.go) .bjx-cmp-x{opacity:0;transform:scale(.3)}.bjx-cmp-x{transition:transform .5s cubic-bezier(.2,1.4,.4,1) .8s,opacity .4s .8s}
+/* Shop now: bigger, sage */
+#shop .bjx-eyebrow{display:inline-block;background:#5b7f5f;color:#fff!important;font-size:2.2rem;font-weight:800;letter-spacing:.06em;padding:.8rem 2.6rem;border-radius:999px;margin-bottom:1.2rem;box-shadow:0 6px 16px rgba(91,127,95,.3)}
+@media(max-width:767px){#shop .bjx-eyebrow{font-size:1.8rem;padding:.6rem 2rem}}
+:root{--bgap:96px}@media(max-width:767px){:root{--bgap:56px}}.mt-footer{margin-top:24px}
+.mt-slogan .bjx-hlogo img{width:auto!important;max-width:none!important;margin:0!important}.bjx-slogrow{flex-wrap:nowrap!important}
+.mt-slogan.bjx-slogrow{display:flex!important;flex-wrap:nowrap!important;align-items:center!important;justify-content:space-between!important}
+.bjx-slogrow>.bjx-hlogo{flex:none}.bjx-slogrow>.en-slogan,.bjx-slogrow>img{flex:0 1 auto;width:auto!important;min-width:0;margin:0!important}
+.bjx-slogrow>.en-slogan{text-align:end}
+.mt-sound{background:#172A7B!important;color:#fff!important}
