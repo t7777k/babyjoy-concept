@@ -71,7 +71,7 @@ Internal file – not linked from the site.
 
 ## Round 13 Oct, 23:00 – test meaning, waves, drops, slogan, shop copy
 - Test copy now says what the test simulates. Source: the campaign video itself (burned-in caption at about 2–4 s of assets/img/test45.mp4, and about 9 s of the staging banner video): «بوضعية الـ45° مثل ما الأم تشيل طفلها» ("at the 45° position, the way a mother holds her baby"). The video also labels BabyJoy «يمنع التسريب» (prevents leakage) and the other diaper «تسريب» (leak).
-  - Hero subline: EN "Leak protection, even while you hold your baby." / AR «حماية من التسريب، حتى وأنتِ تحملين طفلك.»
+  - Hero subline: EN [subline text removed] / AR [subline text removed]
   - Hero body: EN "Both diapers are held at 45°, the way a mother holds her baby, with the same amount of liquid. See the difference." / AR «ثبّتنا الحفاضين بزاوية 45°، كما تحمل الأم طفلها، وأضفنا نفس كمية السائل. شاهدي الفرق.»
   - Test intro: "The only difference is the diaper." / «الفرق الوحيد هو الحفاض.» (the angle and liquid are no longer repeated). Step 1: "Like a baby held in your arms." / «مثل طفلك بين ذراعيك.» Step 3: "See which diaper stops the leak." / «شاهدي أي حفاض يمنع التسريب.»
   - Video caption shortened to avoid repetition: "BabyJoy (left) vs another diaper (right). Test sample: size 4." (+ AR).
@@ -116,8 +116,14 @@ Internal file – not linked from the site.
 7. Band white gap increased (desktop 96 px, mobile 56 px); footer spacing added.
 
 ## v60 — subline + header bar (2026-10-18)
-- 45° subline under "One test... A clear difference.": EN "All-around leak protection, all the time, in any position." / AR «حماية من التسريب من كل الجهات، طوال الوقت وبأي وضعية.» This is Tayyam's wording and is pending claims approval (see VERIFY.md).
+- 45° subline under "One test... A clear difference.": EN [subline text removed] / AR [subline text removed] This is Tayyam's wording and is pending claims approval (see VERIFY.md).
 - Header is now its own sticky white bar with a bottom border and soft shadow, 76 px desktop / 62 px mobile. Layout: desktop logo · menu (items unchanged) · social · compact language pill; mobile logo · burger.
   - Social icons are hidden at 992–1279 px. On mobile they moved into the burger menu.
   - The language button is now a compact pill (previously a full-width orange bar on desktop).
 - The slogan left the header. On the homepage it heads the 45° video section, which has its own sage background, a rounded top and a 16–22 px gap below the header; it never overlays the video. Inner pages no longer show the slogan.
+
+## v61 — 45° subline removed (2026-10-18)
+- Tayyam asked for the line under "One test... A clear difference." to be removed entirely in AR and EN, with no replacement. It is gone from the generator (tsub keys and the bjx-hl2 paragraph deleted) and from every page.
+- Earlier quotes of both subline versions in this log were replaced with "[subline text removed]".
+- None of the wording was used in meta, og or twitter tags, so no meta changes were needed.
+- Spacing: the heading now leads straight into the body line, with a 1.6rem gap.
